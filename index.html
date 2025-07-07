@@ -28,10 +28,10 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts - 明朝体フォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&family=Playfair+Display:wght@300;400&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -45,8 +45,8 @@
         }
         
         body {
-            font-family: "Noto Sans JP", sans-serif;
-            line-height: 1.7;
+            font-family: "Noto Serif JP", "游明朝", "Yu Mincho", serif;
+            line-height: 1.8;
             color: #333;
             background-color: #fefefe;
             font-weight: 300;
@@ -78,13 +78,14 @@
             align-items: center;
         }
         
-        .logo-text {
-            font-size: 1.5rem;
-            font-weight: 400;
-            color: #333;
-            text-decoration: none;
-            letter-spacing: 0.1em;
-            font-family: "Noto Serif JP", serif;
+        .logo-img {
+            height: 40px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo-img:hover {
+            transform: scale(1.05);
         }
         
         .nav-links {
@@ -114,19 +115,16 @@
         }
         
         .nav-icon {
-            color: #333;
-            text-decoration: none;
-            font-size: 0.85rem;
             transition: opacity 0.3s ease;
-            padding: 8px 12px;
-            border: 1px solid #ddd;
-            border-radius: 20px;
-            background: white;
         }
         
         .nav-icon:hover {
             opacity: 0.7;
-            border-color: #333;
+        }
+        
+        .nav-icon img {
+            width: 20px;
+            height: 20px;
         }
         
         /* ハンバーガーメニュー */
@@ -153,24 +151,30 @@
             background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
                         url('top.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: center 30%;
             text-align: center;
             position: relative;
+            border-radius: 0 0 30px 30px;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            color: white;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
         
         .hero-content h1 {
             font-size: 3rem;
             font-weight: 300;
             margin-bottom: 1rem;
-            color: #333;
             letter-spacing: 0.1em;
             font-family: "Noto Serif JP", serif;
         }
         
         .hero-content p {
-            font-size: 1.1rem;
-            color: #666;
+            font-size: 1.2rem;
             letter-spacing: 0.05em;
+            font-weight: 300;
         }
         
         /* セクション共通 */
@@ -194,6 +198,7 @@
             color: #666;
             margin-bottom: 3rem;
             font-size: 0.9rem;
+            font-weight: 300;
         }
         
         /* About セクション */
@@ -218,11 +223,13 @@
             color: #666;
             margin-bottom: 2rem;
             font-style: italic;
+            font-weight: 300;
         }
         
         .brand-description {
             line-height: 1.8;
             color: #555;
+            font-weight: 300;
         }
         
         .inline-link {
@@ -237,14 +244,12 @@
         }
         
         .brand-visual {
-            background: #f0ede8;
+            background-image: url('top.jpg');
+            background-size: cover;
+            background-position: center;
             aspect-ratio: 1;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 0.9rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         
         /* Feature セクション */
@@ -257,15 +262,15 @@
         
         .material-card {
             background: white;
-            border-radius: 12px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
         .material-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
         }
         
         .material-image {
@@ -275,7 +280,7 @@
             align-items: center;
             justify-content: center;
             color: #666;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 300;
             font-family: "Noto Serif JP", serif;
         }
@@ -285,94 +290,74 @@
         }
         
         .material-info h3 {
-            font-size: 1.1rem;
-            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
             font-weight: 400;
+            font-family: "Noto Serif JP", serif;
         }
         
         .material-info p {
             color: #666;
             font-size: 0.9rem;
-            line-height: 1.6;
+            line-height: 1.7;
+            font-weight: 300;
         }
         
         /* Product セクション */
-        .product-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-        }
-        
-        .tab-button {
-            padding: 0.5rem 1.5rem;
-            background: transparent;
-            border: 1px solid #ddd;
-            border-radius: 20px;
-            font-family: inherit;
-            font-size: 0.85rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            color: #666;
-        }
-        
-        .tab-button:hover,
-        .tab-button.active {
-            background: #333;
-            color: white;
-            border-color: #333;
-        }
-        
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 2rem;
+            margin-top: 3rem;
         }
         
         .product-card {
             background: white;
-            border-radius: 12px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
             transition: all 0.3s ease;
             cursor: pointer;
         }
         
         .product-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
         }
         
         .product-image {
-            height: 220px;
-            background: linear-gradient(135deg, #f8f6f2, #f0ede8);
+            height: 250px;
+            background-size: cover;
+            background-position: center;
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #aaa;
             font-size: 0.9rem;
+            background-color: #f8f6f2;
         }
         
         .product-tag {
             position: absolute;
-            top: 10px;
-            right: 10px;
-            background: rgba(255,255,255,0.9);
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.7rem;
+            top: 15px;
+            right: 15px;
+            background: rgba(255,255,255,0.95);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
             color: #666;
+            font-weight: 400;
+            backdrop-filter: blur(10px);
         }
         
         .product-badge {
             position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.7rem;
+            top: 15px;
+            left: 15px;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
             font-weight: 400;
         }
         
@@ -392,15 +377,18 @@
         
         .product-info h3 {
             font-size: 1rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
             font-weight: 400;
+            font-family: "Noto Serif JP", serif;
+            line-height: 1.4;
         }
         
         .product-price {
             color: #333;
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 400;
             margin-bottom: 1rem;
+            font-family: "Playfair Display", serif;
         }
         
         .product-link {
@@ -410,6 +398,7 @@
             border-bottom: 1px solid #ddd;
             transition: all 0.3s ease;
             padding-bottom: 2px;
+            font-weight: 300;
         }
         
         .product-link:hover {
@@ -430,18 +419,21 @@
         
         .btn-base {
             display: inline-block;
-            padding: 1rem 2rem;
+            padding: 1rem 2.5rem;
             background: #333;
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 30px;
             font-size: 0.9rem;
             transition: all 0.3s ease;
+            font-weight: 300;
+            letter-spacing: 0.05em;
         }
         
         .btn-base:hover {
             background: #555;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
         }
         
         /* Store セクション */
@@ -459,6 +451,7 @@
             margin-bottom: 2rem;
             color: #666;
             line-height: 1.8;
+            font-weight: 300;
         }
         
         .btn-shop-large {
@@ -468,21 +461,25 @@
             color: #333;
             text-decoration: none;
             border: 2px solid #333;
-            border-radius: 30px;
+            border-radius: 35px;
             font-size: 1rem;
             font-weight: 400;
             transition: all 0.3s ease;
+            letter-spacing: 0.1em;
         }
         
         .btn-shop-large:hover {
             background: #333;
             color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
         
         .shop-note {
             margin-top: 1rem;
             color: #999;
             font-size: 0.8rem;
+            font-weight: 300;
         }
         
         /* News セクション */
@@ -498,7 +495,7 @@
         }
         
         .news-item {
-            padding: 1.5rem 0;
+            padding: 2rem 0;
             border-bottom: 1px solid #eee;
             transition: padding-left 0.3s ease;
         }
@@ -513,20 +510,24 @@
         
         .news-item time {
             display: block;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             color: #999;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 300;
         }
         
         .news-item h3 {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 400;
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.5rem;
+            font-family: "Noto Serif JP", serif;
         }
         
         .news-item p {
             font-size: 0.9rem;
             color: #666;
+            font-weight: 300;
+            line-height: 1.6;
         }
         
         /* Contact セクション */
@@ -544,6 +545,7 @@
             margin-bottom: 0.5rem;
             font-size: 0.9rem;
             font-weight: 400;
+            color: #333;
         }
         
         .form-group input,
@@ -551,11 +553,12 @@
             width: 100%;
             padding: 1rem;
             border: 1px solid #ddd;
-            border-radius: 8px;
+            border-radius: 10px;
             font-family: inherit;
             font-size: 0.9rem;
-            transition: border-color 0.3s ease;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
             background: #fafafa;
+            font-weight: 300;
         }
         
         .form-group input:focus,
@@ -563,11 +566,13 @@
             outline: none;
             border-color: #333;
             background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
         
         .form-group textarea {
             resize: vertical;
             min-height: 120px;
+            line-height: 1.6;
         }
         
         .btn-submit {
@@ -575,17 +580,21 @@
             padding: 1rem;
             background: transparent;
             color: #333;
-            border: 1px solid #333;
-            border-radius: 8px;
+            border: 2px solid #333;
+            border-radius: 10px;
             font-size: 0.9rem;
             cursor: pointer;
             transition: all 0.3s ease;
             font-family: inherit;
+            font-weight: 400;
+            letter-spacing: 0.05em;
         }
         
         .btn-submit:hover {
             background: #333;
             color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
         }
         
         /* Footer */
@@ -602,12 +611,13 @@
             margin: 0 auto;
         }
         
-        .footer-logo-text {
-            font-size: 1.3rem;
-            font-weight: 400;
+        .footer-logo-img {
+            height: 40px;
+            width: auto;
             margin-bottom: 1.5rem;
-            color: #333;
-            font-family: "Noto Serif JP", serif;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .social-links {
@@ -623,6 +633,7 @@
             text-decoration: none;
             font-size: 0.9rem;
             transition: color 0.3s ease;
+            font-weight: 300;
         }
         
         .social-links a:hover {
@@ -632,6 +643,7 @@
         .brand-links {
             margin-bottom: 1.5rem;
             font-size: 0.9rem;
+            font-weight: 300;
         }
         
         .brand-links a {
@@ -649,6 +661,7 @@
         .copyright {
             font-size: 0.8rem;
             opacity: 0.7;
+            font-weight: 300;
         }
         
         /* レスポンシブ対応 */
@@ -663,6 +676,10 @@
             
             .hero-content h1 {
                 font-size: 2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
             }
             
             section {
@@ -683,25 +700,12 @@
                 grid-template-columns: 1fr;
             }
             
-            .product-tabs {
-                gap: 0.5rem;
-            }
-            
-            .tab-button {
-                padding: 0.4rem 1rem;
-                font-size: 0.8rem;
-            }
-            
             .social-links {
                 gap: 1rem;
             }
             
             nav {
                 padding: 10px 5%;
-            }
-            
-            .logo-text {
-                font-size: 1.2rem;
             }
         }
         
@@ -710,18 +714,54 @@
                 font-size: 1.5rem;
             }
             
-            .hero-content p {
-                font-size: 1rem;
-            }
-            
             section {
                 padding: 2rem 5%;
             }
         }
         
-        /* 非表示クラス */
-        .hidden {
-            display: none !important;
+        /* 商品画像の設定 */
+        .product-image.coaster {
+            background-image: url('57a8e09b6e6051a64fd3d83ffe006737.jpg');
+        }
+        
+        .product-image.toothbrush-base {
+            background-image: url('2d8d1acd9854d678361a3adc4d664f60.jpg');
+        }
+        
+        .product-image.umbrella-stand {
+            background-image: url('1bb997270051b8c2836bca81826e4126.jpg');
+        }
+        
+        .product-image.clock {
+            background-image: url('25b37c8376777316528119c0653957e9.jpg');
+        }
+        
+        .product-image.pot-holder-fish {
+            background-image: url('fbd2c205dd891e525fe46534c69285c5.jpg');
+        }
+        
+        .product-image.toothbrush-large {
+            background-image: url('927d228044ed3ca51c00ddcc27eb1a93.jpg');
+        }
+        
+        .product-image.toothbrush-round {
+            background-image: url('5699a9421e0324bf7bacaec14f04a7a9.jpg');
+        }
+        
+        .product-image.toothbrush-slant {
+            background-image: url('40188bd5cdbe3249f1f4c56e0397e199.jpg');
+        }
+        
+        .product-image.vase {
+            background-image: url('350a2aae2c972991a8d42fd9f7833142.jpg');
+        }
+        
+        .product-image.pen-tray {
+            background-image: url('3b871bbd903fa6f3a1d1472ba34c7337.jpg');
+        }
+        
+        .product-image.tape-cutter {
+            background-image: url('3f4780105ace673fb862fcb2a0d6f2e2.jpg');
         }
     </style>
 </head>
@@ -730,7 +770,7 @@
     <header>
         <nav>
             <div class="logo-group">
-                <a href="#"><img src="logo.png" alt="303product" class="logo-img" style="height: 40px; width: auto;"></a>
+                <a href="#"><img src="logo.png" alt="303product" class="logo-img"></a>
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -742,10 +782,10 @@
             </ul>
             <div class="nav-icons">
                 <a href="https://www.instagram.com/303_product_2019/" target="_blank" class="nav-icon">
-                    <img src="instagram_logo.png" alt="Instagram" style="width: 20px; height: 20px;">
+                    <img src="instagram_logo.png" alt="Instagram">
                 </a>
                 <a href="https://303furniture.thebase.in" target="_blank" class="nav-icon">
-                    <img src="shopping-cart.png" alt="Shop" style="width: 20px; height: 20px;">
+                    <img src="shopping-cart.png" alt="Shop">
                 </a>
             </div>
             <div class="hamburger">
@@ -776,9 +816,7 @@
                     <span class="furniture-note">家具のコレクションは<a href="https://303furniture.net" target="_blank" class="inline-link">303furniture</a>にてご紹介しています。</span>
                 </p>
             </div>
-            <div class="brand-visual">
-                ブランドイメージ画像
-            </div>
+            <div class="brand-visual"></div>
         </div>
     </section>
 
@@ -809,109 +847,125 @@
         <h2>Product</h2>
         <p class="section-subtitle">暮らしの道具たち</p>
         
-        <div class="product-tabs">
-            <button class="tab-button active" data-category="all">すべて</button>
-            <button class="tab-button" data-category="stone">大谷石</button>
-            <button class="tab-button" data-category="wood">無垢材</button>
-            <button class="tab-button" data-category="other">その他</button>
-        </div>
-        
         <div class="products-grid">
-            <div class="product-card" data-category="stone">
-                <div class="product-image">
+            <div class="product-card">
+                <div class="product-image coaster">
                     <span class="product-tag">大谷石</span>
-                    <div class="product-badge new">NEW</div>
-                    大谷石 コースター
                 </div>
                 <div class="product-info">
                     <h3>大谷石コースター</h3>
                     <p class="product-price">¥1,500</p>
-                    <a href="https://303furniture.thebase.in" target="_blank" class="product-link">詳細を見る</a>
+                    <a href="https://303furniture.thebase.in/items/85893893" target="_blank" class="product-link">詳細を見る</a>
                 </div>
             </div>
             
-            <div class="product-card" data-category="stone">
-                <div class="product-image">
+            <div class="product-card">
+                <div class="product-image toothbrush-base">
                     <span class="product-tag">大谷石</span>
-                    大谷石 歯磨き立て
                 </div>
                 <div class="product-info">
                     <h3>歯磨き立てベース</h3>
                     <p class="product-price">¥16,000</p>
-                    <a href="https://303furniture.thebase.in" target="_blank" class="product-link">詳細を見る</a>
+                    <a href="https://303furniture.thebase.in/items/16961377" target="_blank" class="product-link">詳細を見る</a>
                 </div>
             </div>
             
-            <div class="product-card" data-category="stone">
-                <div class="product-image">
+            <div class="product-card">
+                <div class="product-image umbrella-stand">
                     <span class="product-tag">大谷石</span>
-                    大谷石 傘立て
                 </div>
                 <div class="product-info">
                     <h3>大谷石 傘立て</h3>
                     <p class="product-price">¥60,000</p>
-                    <a href="https://303furniture.thebase.in" target="_blank" class="product-link">詳細を見る</a>
+                    <a href="https://303furniture.thebase.in/items/76730502" target="_blank" class="product-link">詳細を見る</a>
                 </div>
             </div>
             
-            <div class="product-card" data-category="stone">
-                <div class="product-image">
+            <div class="product-card">
+                <div class="product-image clock">
                     <span class="product-tag">大谷石</span>
-                    大谷石 時計
                 </div>
                 <div class="product-info">
                     <h3>大谷石 時計</h3>
                     <p class="product-price">¥29,000</p>
-                    <a href="https://303furniture.thebase.in" target="_blank" class="product-link">詳細を見る</a>
+                    <a href="https://303furniture.thebase.in/items/75017871" target="_blank" class="product-link">詳細を見る</a>
                 </div>
             </div>
             
-            <div class="product-card" data-category="stone">
-                <div class="product-image">
+            <div class="product-card">
+                <div class="product-image pot-holder-fish">
                     <span class="product-tag">大谷石</span>
-                    大谷石 一輪挿し
+                </div>
+                <div class="product-info">
+                    <h3>大谷石 鍋敷 サカナ</h3>
+                    <p class="product-price">¥70,000</p>
+                    <a href="https://303furniture.thebase.in/items/74672341" target="_blank" class="product-link">詳細を見る</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image toothbrush-large">
+                    <span class="product-tag">大谷石</span>
+                </div>
+                <div class="product-info">
+                    <h3>大谷石 歯磨き立て マル 大</h3>
+                    <p class="product-price">¥8,000</p>
+                    <a href="https://303furniture.thebase.in/items/927d228044ed3ca51c00ddcc27eb1a93" target="_blank" class="product-link">詳細を見る</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image toothbrush-round">
+                    <span class="product-tag">大谷石</span>
+                </div>
+                <div class="product-info">
+                    <h3>大谷石 歯磨き立て マル</h3>
+                    <p class="product-price">¥6,000</p>
+                    <a href="https://303furniture.thebase.in/items/73600217" target="_blank" class="product-link">詳細を見る</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image toothbrush-slant">
+                    <span class="product-tag">大谷石</span>
+                </div>
+                <div class="product-info">
+                    <h3>大谷石 歯磨き立て ナナメ</h3>
+                    <p class="product-price">¥6,000</p>
+                    <a href="https://303furniture.thebase.in/items/73599952" target="_blank" class="product-link">詳細を見る</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image vase">
+                    <span class="product-tag">大谷石</span>
                 </div>
                 <div class="product-info">
                     <h3>大谷石 一輪挿し</h3>
                     <p class="product-price">¥18,000</p>
-                    <a href="https://303furniture.thebase.in" target="_blank" class="product-link">詳細を見る</a>
+                    <a href="https://303furniture.thebase.in/items/72894494" target="_blank" class="product-link">詳細を見る</a>
                 </div>
             </div>
             
-            <div class="product-card" data-category="wood">
-                <div class="product-image">
-                    <span class="product-tag">無垢材</span>
-                    格子 チェア
+            <div class="product-card">
+                <div class="product-image pen-tray">
+                    <span class="product-tag">大谷石</span>
                 </div>
                 <div class="product-info">
-                    <h3>格子 チェア</h3>
-                    <p class="product-price">¥87,000</p>
-                    <a href="https://303furniture.thebase.in" target="_blank" class="product-link">詳細を見る</a>
+                    <h3>大谷石 ペントレイ</h3>
+                    <p class="product-price">¥17,000</p>
+                    <a href="https://303furniture.thebase.in/items/72389361" target="_blank" class="product-link">詳細を見る</a>
                 </div>
             </div>
             
-            <div class="product-card" data-category="wood">
-                <div class="product-image">
-                    <span class="product-tag">無垢材</span>
-                    <div class="product-badge soldout">SOLD OUT</div>
-                    テルテルボウズ スツール
+            <div class="product-card">
+                <div class="product-image tape-cutter">
+                    <span class="product-tag">大谷石</span>
                 </div>
                 <div class="product-info">
-                    <h3>テルテルボウズ スツール</h3>
-                    <p class="product-price">¥48,000</p>
-                    <span class="product-link disabled">売り切れ</span>
-                </div>
-            </div>
-            
-            <div class="product-card" data-category="other">
-                <div class="product-image">
-                    <span class="product-tag">ケアアイテム</span>
-                    Tapir ワックス
-                </div>
-                <div class="product-info">
-                    <h3>Tapir/タピール ケンドリンガー フレーゲワックス</h3>
-                    <p class="product-price">¥2,750</p>
-                    <a href="https://303furniture.thebase.in" target="_blank" class="product-link">詳細を見る</a>
+                    <h3>大谷石 テープカッター</h3>
+                    <p class="product-price">¥33,000</p>
+                    <a href="https://303furniture.thebase.in/items/71947273" target="_blank" class="product-link">詳細を見る</a>
                 </div>
             </div>
         </div>
@@ -966,7 +1020,7 @@
                 <article class="news-item">
                     <time>2024.09.10</time>
                     <h3>大谷石コースター入荷</h3>
-                    <p>人気の大谷石コースターが再入荷いたしました。数量限定ですのでお早めに。</p>
+                    <p>人気の大谷石コースターが再入荷いたました。数量限定ですのでお早めに。</p>
                 </article>
             </div>
         </div>
@@ -976,7 +1030,7 @@
     <section id="contact" class="contact">
         <h2>Contact</h2>
         <p class="section-subtitle">お問い合わせ</p>
-        <form class="contact-form">
+        <form class="contact-form" action="contact.php" method="POST">
             <div class="form-group">
                 <label for="name">お名前 *</label>
                 <input type="text" id="name" name="name" required>
@@ -1000,7 +1054,7 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <img src="logo.png" alt="303product" style="height: 40px; width: auto; margin-bottom: 1.5rem; display: block; margin-left: auto; margin-right: auto;">
+            <img src="logo.png" alt="303product" class="footer-logo-img">
             <div class="social-links">
                 <a href="https://www.instagram.com/303_product_2019/" target="_blank">Instagram</a>
                 <a href="https://creema.jp/creator/303product" target="_blank">Creema</a>
@@ -1045,38 +1099,7 @@
             }
         });
 
-        // プロダクトタブフィルター
-        const tabButtons = document.querySelectorAll('.tab-button');
-        const productCards = document.querySelectorAll('.product-card');
-        
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // アクティブタブの切り替え
-                tabButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-                
-                // 商品フィルタリング
-                const category = button.dataset.category;
-                
-                productCards.forEach(card => {
-                    if (category === 'all' || card.dataset.category === category) {
-                        card.style.display = 'block';
-                        setTimeout(() => {
-                            card.style.opacity = '1';
-                            card.style.transform = 'scale(1)';
-                        }, 100);
-                    } else {
-                        card.style.opacity = '0';
-                        card.style.transform = 'scale(0.95)';
-                        setTimeout(() => {
-                            card.style.display = 'none';
-                        }, 300);
-                    }
-                });
-            });
-        });
-
-        // モバイルメニュー（シンプル版）
+        // モバイルメニュー
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
         
@@ -1094,38 +1117,12 @@
                 navLinks.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
                 navLinks.style.padding = '1rem';
                 navLinks.style.gap = '1rem';
+                navLinks.style.borderRadius = '0 0 15px 15px';
             }
-        });
-
-        // フォーム送信処理
-        document.querySelector('.contact-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // 簡単なバリデーション
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
-            
-            if (!name || !email || !message) {
-                alert('必須項目を入力してください。');
-                return;
-            }
-            
-            // メール形式チェック
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(email)) {
-                alert('正しいメールアドレスを入力してください。');
-                return;
-            }
-            
-            alert('お問い合わせありがとうございます。内容を確認の上、追ってご連絡いたします。');
-            
-            // フォームをリセット
-            document.querySelector('.contact-form').reset();
         });
 
         // 商品カードのクリックイベント
-        productCards.forEach(card => {
+        document.querySelectorAll('.product-card').forEach(card => {
             card.addEventListener('click', (e) => {
                 if (!e.target.classList.contains('product-link')) {
                     const link = card.querySelector('.product-link:not(.disabled)');
