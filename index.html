@@ -1030,7 +1030,7 @@
     <section id="contact" class="contact">
         <h2>Contact</h2>
         <p class="section-subtitle">お問い合わせ</p>
-        <form class="contact-form" action="contact.php" method="POST">
+        <form class="contact-form" action="https://formspree.io/f/meokbez1" method="POST">
             <div class="form-group">
                 <label for="name">お名前 *</label>
                 <input type="text" id="name" name="name" required>
@@ -1047,6 +1047,10 @@
                 <label for="message">お問い合わせ内容 *</label>
                 <textarea id="message" name="message" placeholder="商品についてのご質問やご要望などお気軽にお書きください" required></textarea>
             </div>
+            <!-- Formspree用の隠しフィールド -->
+            <input type="hidden" name="_subject" value="【303Product】お問い合わせ">
+            <input type="hidden" name="_next" value="https://303product.github.io/303product-site/contact_success.html">
+            <input type="hidden" name="_cc" value="info@303furniture.net">
             <button type="submit" class="btn-submit">送信する</button>
         </form>
     </section>
