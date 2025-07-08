@@ -1030,7 +1030,7 @@
     <section id="contact" class="contact">
         <h2>Contact</h2>
         <p class="section-subtitle">お問い合わせ</p>
-        <form class="contact-form" action="https://formspree.io/f/meokbez1" method="POST">
+        <form class="contact-form">
             <div class="form-group">
                 <label for="name">お名前 *</label>
                 <input type="text" id="name" name="name" required>
@@ -1047,12 +1047,40 @@
                 <label for="message">お問い合わせ内容 *</label>
                 <textarea id="message" name="message" placeholder="商品についてのご質問やご要望などお気軽にお書きください" required></textarea>
             </div>
-            <!-- Formspree用の隠しフィールド -->
-            <input type="hidden" name="_subject" value="【303Product】お問い合わせ">
-            <input type="hidden" name="_next" value="https://303product.github.io/303product-site/contact_success.html">
-            <input type="hidden" name="_cc" value="info@303furniture.net">
-            <button type="submit" class="btn-submit">送信する</button>
+            <button type="button" class="btn-submit" onclick="sendEmail()">送信する</button>
         </form>
+        
+        <script>
+        function sendEmail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value || 'お問い合わせ';
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !message) {
+                alert('必須項目を入力してください。');
+                return;
+            }
+            
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('正しいメールアドレスを入力してください。');
+                return;
+            }
+            
+            const emailBody = `お名前: ${name}%0D%0A` +
+                            `メールアドレス: ${email}%0D%0A` +
+                            `件名: ${subject}%0D%0A%0D%0A` +
+                            `お問い合わせ内容:%0D%0A${message}`;
+            
+            window.location.href = `mailto:info@303furniture.net?subject=【303Product】${subject}&body=${emailBody}`;
+            
+            // 送信完了メッセージ
+            setTimeout(() => {
+                alert('メールソフトが開きます。そちらから送信してください。');
+            }, 500);
+        }
+        </script>
     </section>
 
     <!-- Footer -->
