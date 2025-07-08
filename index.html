@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+        <div class="news-container">
+            <div class="news-list">
+                <article class="news-item<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -28,10 +30,10 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     
-    <!-- Google Fonts - Noto Serif JP (クールな明朝体) -->
+    <!-- Google Fonts - おねじフォント（Kosugi Maru）とNoto Serif JP -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -45,11 +47,11 @@
         }
         
         body {
-            font-family: "Noto Serif JP", serif;
+            font-family: "Kosugi Maru", sans-serif;
             line-height: 1.8;
             color: #444;
             background-color: #fefefe;
-            font-weight: 300;
+            font-weight: 400;
         }
         
         /* ヘッダー改善 */
@@ -103,7 +105,7 @@
             text-decoration: none;
             color: #444;
             font-size: 0.9rem;
-            font-weight: 300;
+            font-weight: 400;
             transition: opacity 0.3s ease;
             letter-spacing: 0.05em;
         }
@@ -190,7 +192,7 @@
             text-decoration: none;
             color: #444;
             font-size: 1rem;
-            font-weight: 300;
+            font-weight: 400;
             display: block;
             padding: 10px;
             text-align: center;
@@ -216,20 +218,24 @@
         .hero-content {
             color: white;
             text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
         }
         
         .hero-content h1 {
             font-size: 2.5rem;
-            font-weight: 300;
+            font-weight: 400;
             margin-bottom: 1rem;
             letter-spacing: 0.1em;
-            font-family: "Noto Serif JP", serif;
+            font-family: "Kosugi Maru", sans-serif;
         }
         
         .hero-content p {
             font-size: 1rem;
             letter-spacing: 0.05em;
-            font-weight: 300;
+            font-weight: 400;
         }
         
         /* ブランドキャッチコピー - 中央揃え・改行調整 */
@@ -245,7 +251,7 @@
             font-weight: 400;
             color: #444;
             margin-bottom: 1.5rem;
-            font-family: "Noto Serif JP", serif;
+            font-family: "Kosugi Maru", sans-serif;
         }
         
         .brand-catchcopy p {
@@ -253,8 +259,8 @@
             color: #555;
             max-width: 600px;
             margin: 0 auto;
-            line-height: 1.8;
-            font-weight: 300;
+            line-height: 2.2;
+            font-weight: 400;
         }
         
         /* セクション共通 */
@@ -270,7 +276,7 @@
             text-align: center;
             margin-bottom: 1rem;
             color: #444;
-            font-family: "Noto Serif JP", serif;
+            font-family: "Kosugi Maru", sans-serif;
         }
         
         .section-subtitle {
@@ -278,7 +284,7 @@
             color: #555;
             margin-bottom: 3rem;
             font-size: 0.9rem;
-            font-weight: 300;
+            font-weight: 400;
         }
         
         /* About セクション修正 - top.jpg使用 */
@@ -302,14 +308,14 @@
             font-size: 1rem;
             color: #555;
             margin-bottom: 2rem;
-            font-weight: 300;
+            font-weight: 400;
             font-style: normal;
         }
         
         .brand-description {
             line-height: 1.8;
             color: #444;
-            font-weight: 300;
+            font-weight: 400;
         }
         
         .inline-link {
@@ -364,10 +370,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #666;
+            color: transparent;
             font-size: 1.3rem;
-            font-weight: 300;
-            font-family: "Noto Serif JP", serif;
+            font-weight: 400;
+            font-family: "Kosugi Maru", sans-serif;
             transition: all 0.5s ease;
         }
         
@@ -387,7 +393,7 @@
             font-size: 1.2rem;
             margin-bottom: 1rem;
             font-weight: 400;
-            font-family: "Noto Serif JP", serif;
+            font-family: "Kosugi Maru", sans-serif;
             color: #444;
         }
         
@@ -395,7 +401,7 @@
             color: #555;
             font-size: 0.9rem;
             line-height: 1.7;
-            font-weight: 300;
+            font-weight: 400;
         }
         
         /* Product セクション - 画像表示改善 */
@@ -446,7 +452,7 @@
             border-radius: 20px;
             font-size: 0.75rem;
             color: #555;
-            font-weight: 300;
+            font-weight: 400;
             backdrop-filter: blur(10px);
         }
         
@@ -457,7 +463,7 @@
             padding: 6px 15px;
             border-radius: 20px;
             font-size: 0.75rem;
-            font-weight: 300;
+            font-weight: 400;
         }
         
         .product-badge.new {
@@ -478,7 +484,7 @@
             font-size: 1rem;
             margin-bottom: 0.8rem;
             font-weight: 400;
-            font-family: "Noto Serif JP", serif;
+            font-family: "Kosugi Maru", sans-serif;
             line-height: 1.4;
             color: #444;
         }
@@ -486,9 +492,9 @@
         .product-price {
             color: #444;
             font-size: 0.9rem;
-            font-weight: 300;
+            font-weight: 400;
             margin-bottom: 1rem;
-            font-family: "Noto Serif JP", serif;
+            font-family: "Kosugi Maru", sans-serif;
             letter-spacing: 0.05em;
         }
         
@@ -497,7 +503,7 @@
             text-decoration: none;
             font-size: 1.2rem;
             transition: all 0.3s ease;
-            font-weight: 300;
+            font-weight: 400;
             display: inline-block;
         }
         
@@ -526,7 +532,7 @@
             margin-bottom: 2rem;
             color: #555;
             line-height: 1.8;
-            font-weight: 300;
+            font-weight: 400;
         }
         
         .btn-shop-large {
@@ -537,10 +543,10 @@
             text-decoration: none;
             border-radius: 25px;
             font-size: 0.9rem;
-            font-weight: 300;
+            font-weight: 400;
             transition: all 0.3s ease;
             letter-spacing: 0.1em;
-            font-family: "Noto Serif JP", serif;
+            font-family: "Kosugi Maru", sans-serif;
             border: 1px solid #ddd;
         }
         
@@ -581,21 +587,21 @@
             font-size: 0.85rem;
             color: #777;
             margin-bottom: 0.8rem;
-            font-weight: 300;
+            font-weight: 400;
         }
         
         .news-item h3 {
             font-size: 1.1rem;
             font-weight: 400;
             margin-bottom: 0.5rem;
-            font-family: "Noto Serif JP", serif;
+            font-family: "Kosugi Maru", sans-serif;
             color: #444;
         }
         
         .news-item p {
             font-size: 0.9rem;
             color: #555;
-            font-weight: 300;
+            font-weight: 400;
             line-height: 1.6;
         }
         
@@ -715,7 +721,7 @@
         
         .copyright {
             font-size: 0.9rem;
-            font-weight: 300;
+            font-weight: 400;
             color: #555;
         }
         
@@ -902,8 +908,8 @@
     <section class="brand-catchcopy">
         <h2>自然素材を生かすインテリア小物・家具</h2>
         <p>
-            303は、大谷石や無垢材などの自然素材を中心に、<br>
-            ひとつひとつ丁寧に仕上げた暮らしの道具を制作しています。<br>
+            303（サンマルサン）は、大谷石や無垢材などの自然素材を中心に、<br>
+            ひとつひとつ丁寧に仕上げた暮らしの道具を制作しています。<br><br>
             素材が持つ本来の美しさを大切に、<br>
             現代の生活に寄り添うシンプルな機能性を追求しています。<br><br>
             オーダー家具や空間提案も行っており、<br>
@@ -917,7 +923,7 @@
             <div class="brand-text">
                 <p class="brand-tagline">素材の静けさを、暮らしのそばに。</p>
                 <p class="brand-description">
-                    303は、日々の暮らしを豊かにするインテリア小物・家具のブランドです。<br><br>
+                    303（サンマルサン）は、日々の暮らしを豊かにするインテリア小物・家具のブランドです。<br><br>
                     大谷石や無垢材などの自然素材を使い、ひとつひとつ手作業で仕上げています。<br><br>
                     <span class="furniture-note">家具のコレクションは<a href="https://303furniture.net" target="_blank" class="inline-link">303furniture</a>にてご紹介しています。</span>
                 </p>
@@ -932,14 +938,14 @@
         <p class="section-subtitle">素材の魅力</p>
         <div class="materials-grid">
             <div class="material-card">
-                <div class="material-image stone">大谷石</div>
+                <div class="material-image stone"></div>
                 <div class="material-info">
                     <h3>大谷石</h3>
                     <p>栃木県宇都宮市で採掘される大谷石。柔らかな風合いと、独特の多孔質が生み出す表情。調湿性に優れ、暮らしに寄り添う石です。</p>
                 </div>
             </div>
             <div class="material-card">
-                <div class="material-image wood">無垢材</div>
+                <div class="material-image wood"></div>
                 <div class="material-info">
                     <h3>無垢材</h3>
                     <p>木が持つ本来の美しさをそのままに。使い込むほどに深まる色艶、手に馴染む質感。時間とともに育てる楽しみがあります。</p>
@@ -1084,7 +1090,7 @@
         <div class="shop-container">
             <div class="shop-content">
                 <p class="shop-intro">
-                    303の商品は、オンラインショップにてご購入いただけます。大谷石や無垢材を使った暮らしの道具たちをぜひご覧ください。
+                    303（サンマルサン）の商品は、オンラインショップにてご購入いただけます。大谷石や無垢材を使った暮らしの道具たちをぜひご覧ください。
                 </p>
                 <div class="shop-button-container">
                     <a href="https://303furniture.thebase.in" target="_blank" class="btn-shop-large">
@@ -1101,6 +1107,11 @@
         <p class="section-subtitle">お知らせ</p>
         <div class="news-container">
             <div class="news-list">
+                <article class="news-item">
+                    <time>2025.01.15</time>
+                    <h3>ハンドメイドインジャパンフェス（HMJ）に出店します</h3>
+                    <p>2025年春に開催予定のハンドメイドインジャパンフェス（HMJ）に出店いたします。大谷石や無垢材を使った新作も展示予定です。詳細は<a href="https://hmj-fes.jp" target="_blank" style="color: #444; text-decoration: underline;">公式サイト</a>をご覧ください。</p>
+                </article>
                 <article class="news-item">
                     <time>2024.12.20</time>
                     <h3>年末年始の営業について</h3>
@@ -1157,7 +1168,7 @@
     <footer>
         <div class="footer-content">
             <img src="logo.png" alt="303 ロゴ" class="footer-logo-img" loading="lazy">
-            <p class="copyright">&copy; 2025 303. All rights reserved.</p>
+            <p class="copyright">&copy; 2025 303（サンマルサン）. All rights reserved.</p>
         </div>
     </footer>
 
