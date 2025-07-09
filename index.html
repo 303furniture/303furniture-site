@@ -1,18 +1,16 @@
-        <div class="news-container">
-            <div class="news-list">
-                <article class="news-item<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>303｜大谷石や無垢材を用いたインテリア小物・家具 | 素材の静けさを、暮らしのそばに。</title>
+    <title>303｜大谷石や無垢材を用いた暮らしの道具 | 素材の静けさを、暮らしのそばに。</title>
     
     <!-- SEO対策 -->
-    <meta name="description" content="303は、大谷石や無垢材などの自然素材を用いたインテリア小物・家具を制作・販売するブランドです。栃木県宇都宮市の大谷石を使った一点ものの暮らしの道具をお届けします。">
+    <meta name="description" content="303は、大谷石や無垢材などの自然素材を用いたインテリア小物・家具を制作・販売するブランドです。雑貨から家具まで、暮らしに寄り添う道具をお届けします。">
     <meta name="keywords" content="303,サンマルサン,大谷石,無垢材,インテリア雑貨,家具,暮らしの道具,栃木,宇都宮,ハンドメイド,自然素材">
     
     <!-- OGP設定 -->
-    <meta property="og:title" content="303｜大谷石や無垢材を用いたインテリア小物・家具">
+    <meta property="og:title" content="303｜大谷石や無垢材を用いた暮らしの道具">
     <meta property="og:description" content="303は、大谷石や無垢材などの自然素材を用いたインテリア小物・家具を制作・販売するブランドです。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://303product.github.io/303product-site/">
@@ -22,7 +20,7 @@
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="303｜大谷石や無垢材を用いたインテリア小物・家具">
+    <meta name="twitter:title" content="303｜大谷石や無垢材を用いた暮らしの道具">
     <meta name="twitter:description" content="303は、大谷石や無垢材などの自然素材を用いたインテリア小物・家具を制作・販売するブランドです。">
     <meta name="twitter:image" content="https://303product.github.io/303product-site/IMG_3350.JPG">
     
@@ -54,7 +52,7 @@
             font-weight: 300;
         }
         
-        /* ヘッダー - 一から見直し */
+        /* ヘッダー - product.htmlと同じ仕様 */
         header {
             position: fixed;
             top: 0;
@@ -125,13 +123,14 @@
         }
         
         .nav-icons {
-            display: flex;
+            display: flex !important;
             align-items: center;
             gap: 1rem;
         }
         
         .nav-icon {
             transition: opacity 0.3s ease;
+            display: block !important;
         }
         
         .nav-icon:hover {
@@ -141,19 +140,7 @@
         .nav-icon img {
             width: 20px;
             height: 20px;
-        }
-        
-        .nav-icon {
-            transition: opacity 0.3s ease;
-        }
-        
-        .nav-icon:hover {
-            opacity: 0.7;
-        }
-        
-        .nav-icon img {
-            width: 20px;
-            height: 20px;
+            display: block;
         }
         
         /* ハンバーガーメニュー */
@@ -220,7 +207,7 @@
             text-align: center;
         }
         
-        /* ヒーロー画像修正 - 添付画像のように左右余白を最小に + IMG_3350.JPG + 3アイテム中央配置 */
+        /* ヒーロー画像 */
         .hero {
             height: 100vh;
             display: flex;
@@ -261,310 +248,95 @@
             font-weight: 300;
         }
         
-        /* ブランドキャッチコピー - 中央揃え・改行調整 */
-        .brand-catchcopy {
+        /* カテゴリ分岐セクション */
+        .category-section {
+            padding: 6rem 5%;
             text-align: center;
-            padding: 3rem 5% 1rem;
             background: #fafaf8;
-            margin-top: 2rem;
         }
         
-        .brand-catchcopy h2 {
-            font-size: 1.8rem;
+        .category-intro {
+            margin-bottom: 4rem;
+        }
+        
+        .category-intro h2 {
+            font-size: 2rem;
             font-weight: 400;
             color: #444;
             margin-bottom: 1.5rem;
             font-family: "Noto Serif JP", serif;
         }
         
-        .brand-catchcopy p {
+        .category-intro p {
             font-size: 1rem;
             color: #555;
             max-width: 600px;
             margin: 0 auto;
-            line-height: 2.2;
+            line-height: 1.8;
             font-weight: 300;
         }
         
-        /* セクション共通 */
-        section {
-            padding: 4rem 5%;
-            max-width: 1200px;
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            max-width: 1000px;
             margin: 0 auto;
         }
         
-        h2 {
-            font-size: 2rem;
-            font-weight: 400;
-            text-align: center;
-            margin-bottom: 1rem;
-            color: #444;
-            font-family: "Noto Serif JP", serif;
-        }
-        
-        .section-subtitle {
-            text-align: center;
-            color: #555;
-            margin-bottom: 3rem;
-            font-size: 0.9rem;
-            font-weight: 300;
-        }
-        
-        /* About セクション修正 - top.jpg使用 */
-        .brand-intro {
-            background: #fafaf8;
-        }
-        
-        .brand-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-        
-        .brand-text h2 {
-            text-align: left;
-            margin-bottom: 1.2rem;
-        }
-        
-        .brand-tagline {
-            font-size: 1.8rem;
-            color: #444;
-            margin-bottom: 2rem;
-            font-weight: 400;
-            font-style: normal;
-            font-family: "Noto Serif JP", serif;
-        }
-        
-        .brand-description {
-            line-height: 1.8;
-            color: #444;
-            font-weight: 300;
-        }
-        
-        .inline-link {
-            color: #444;
-            text-decoration: underline;
-            text-decoration-color: #ccc;
-            transition: text-decoration-color 0.3s ease;
-        }
-        
-        .inline-link:hover {
-            text-decoration-color: #444;
-        }
-        
-        .brand-visual {
-            background-image: url('top.jpg');
-            background-size: cover;
-            background-position: center 60%;
-            aspect-ratio: 1;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        
-        /* Feature セクション - 背景画像追加 */
-        .materials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .material-card {
+        .category-card {
             background: white;
-            border-radius: 10px;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
         }
         
-        .material-card:hover {
-            transform: scale(1.02);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-            backdrop-filter: blur(10px);
-            filter: brightness(1.1) saturate(0.8);
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
         
-        .material-image {
-            height: 200px;
+        .category-image {
+            height: 280px;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: transparent;
-            font-size: 1.3rem;
-            font-weight: 300;
-            font-family: "Noto Serif JP", serif;
-            transition: all 0.5s ease;
         }
         
-        .material-image.stone {
-            background-image: url('L1005168.jpg');
-            background-position: center 60%;
+        .category-image.product {
+            background-image: url('IMG_3350.JPG');
         }
         
-        .material-image.wood {
-            background-image: url('IMG_3008.jpg');
-            background-position: center 40%;
+        .category-image.furniture {
+            background-image: url('top.jpg');
         }
         
-        .material-info {
-            padding: 1.5rem;
+        .category-content {
+            padding: 2rem;
         }
         
-        .material-info h3 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
+        .category-content h3 {
+            font-size: 1.4rem;
             font-weight: 400;
+            margin-bottom: 1rem;
             font-family: "Noto Serif JP", serif;
             color: #444;
         }
         
-        .material-info p {
+        .category-content p {
             color: #555;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             line-height: 1.7;
             font-weight: 300;
+            margin-bottom: 1.5rem;
         }
         
-        /* Product セクション - 画像表示改善 */
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .product-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;
-        }
-        
-        .product-card:hover {
-            transform: scale(1.02);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-            backdrop-filter: blur(10px);
-            filter: brightness(1.1) saturate(0.8);
-        }
-        
-        .product-image {
-            height: 250px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #f8f6f2;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #aaa;
-            font-size: 0.9rem;
-            transition: all 0.5s ease;
-        }
-        
-        .product-tag {
-            position: absolute;
-            top: -35px;
-            right: 15px;
-            background: rgba(255,255,255,0.95);
-            padding: 6px 15px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            color: #555;
-            font-weight: 300;
-            backdrop-filter: blur(10px);
-            z-index: 10;
-        }
-        
-        .product-badge {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            padding: 6px 15px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 300;
-        }
-        
-        .product-badge.new {
-            background: #444;
-            color: white;
-        }
-        
-        .product-badge.soldout {
-            background: #e0e0e0;
-            color: #999;
-        }
-        
-        .product-info {
-            padding: 1.5rem;
-        }
-        
-        .product-info h3 {
-            font-size: 1rem;
-            margin-bottom: 0.8rem;
-            font-weight: 400;
-            font-family: "Noto Serif JP", serif;
-            line-height: 1.4;
-            color: #444;
-        }
-        
-        .product-price {
-            color: #444;
-            font-size: 0.9rem;
-            font-weight: 300;
-            margin-bottom: 1rem;
-            font-family: "Noto Serif JP", serif;
-            letter-spacing: 0.05em;
-        }
-        
-        .product-link {
-            color: #555;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-            font-weight: 300;
+        .category-button {
             display: inline-block;
-        }
-        
-        .product-link:hover {
-            color: #444;
-            transform: translateX(5px);
-        }
-        
-        .product-link.disabled {
-            color: #ccc;
-            cursor: not-allowed;
-        }
-        
-        /* Store セクション - ボタンデザイン改善 */
-        .shop-info {
-            background: #fafaf8;
-        }
-        
-        .shop-container {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        .shop-intro {
-            margin-bottom: 2rem;
-            color: #555;
-            line-height: 1.8;
-            font-weight: 300;
-        }
-        
-        .btn-shop-large {
-            display: inline-block;
-            padding: 0.9rem 2.5rem;
+            padding: 0.8rem 2rem;
             background: white;
             color: #444;
             text-decoration: none;
@@ -577,173 +349,49 @@
             border: 1px solid #ddd;
         }
         
-        .btn-shop-large:hover {
+        .category-button:hover {
             background: #f8f8f8;
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
         
-        /* News セクション */
-        .news-container {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .news-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-        
-        .news-item {
-            padding: 2rem 0;
-            border-bottom: 1px solid #eee;
-            transition: padding-left 0.3s ease;
-        }
-        
-        .news-item:hover {
-            padding-left: 1rem;
-        }
-        
-        .news-item:last-child {
-            border-bottom: none;
-        }
-        
-        .news-item time {
-            display: block;
-            font-size: 0.85rem;
-            color: #777;
-            margin-bottom: 0.8rem;
-            font-weight: 300;
-        }
-        
-        .news-item h3 {
-            font-size: 1.1rem;
-            font-weight: 400;
-            margin-bottom: 0.5rem;
-            font-family: "Noto Serif JP", serif;
-            color: #444;
-        }
-        
-        .news-item p {
-            font-size: 0.9rem;
-            color: #555;
-            font-weight: 300;
-            line-height: 1.6;
-        }
-        
-        /* Contact セクション - ボタンデザイン改善 */
-        .contact-form {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-            font-weight: 300;
-            color: #444;
-        }
-        
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            font-family: inherit;
-            font-size: 0.9rem;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            background: #fafafa;
-            font-weight: 300;
-            color: #444;
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #444;
-            background: white;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
-        
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-            line-height: 1.6;
-        }
-        
-        .btn-submit {
-            width: 100%;
-            padding: 0.9rem;
-            background: white;
-            color: #444;
-            border: 1px solid #ddd;
-            border-radius: 25px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: inherit;
-            font-weight: 300;
-            letter-spacing: 0.05em;
-        }
-        
-        .btn-submit:hover {
-            background: #f8f8f8;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-        }
-        
-        .btn-submit:disabled {
-            background: #ccc;
-            color: #888;
-            cursor: not-allowed;
-            transform: none;
-        }
-        
-        /* 送信完了メッセージ */
-        .form-message {
-            background: #d4edda;
-            color: #155724;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            text-align: center;
-            font-size: 0.9rem;
-            display: none;
-        }
-        
-        .form-message.show {
-            display: block;
-        }
-        
-        /* Footer背景を白に変更 */
+        /* フッター */
         footer {
             background: #fefefe;
             color: #555;
-            padding: 2rem 5%;
+            padding: 3rem 5%;
             text-align: center;
             border-top: 1px solid #eee;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
         
         .footer-content {
-            max-width: 1200px;
+            max-width: 600px;
             margin: 0 auto;
         }
         
         .footer-logo-img {
             height: 52px;
             width: auto;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+        
+        .footer-contact {
+            margin-bottom: 2rem;
+        }
+        
+        .footer-contact a {
+            color: #555;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: opacity 0.3s ease;
+        }
+        
+        .footer-contact a:hover {
+            opacity: 0.7;
         }
         
         .copyright {
@@ -752,7 +400,21 @@
             color: #555;
         }
         
-        /* レスポンシブ対応強化 */
+        /* レスポンシブ対応 */
+        @media (min-width: 769px) {
+            .nav-links {
+                display: flex !important;
+            }
+            
+            .nav-icons {
+                display: flex !important;
+            }
+            
+            .hamburger {
+                display: none !important;
+            }
+        }
+        
         @media (max-width: 768px) {
             nav {
                 grid-template-columns: auto 1fr auto;
@@ -762,6 +424,10 @@
             
             .nav-links {
                 display: none;
+            }
+            
+            .nav-icons {
+                display: flex !important;
             }
             
             .hamburger {
@@ -790,30 +456,17 @@
                 font-size: 0.9rem;
             }
             
-            section {
-                padding: 3rem 5%;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-            
-            .brand-container {
+            .category-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
             
-            .materials-grid,
-            .products-grid {
-                grid-template-columns: 1fr;
+            .category-section {
+                padding: 4rem 5%;
             }
             
-            .brand-catchcopy h2 {
-                font-size: 1.4rem;
-            }
-            
-            .brand-catchcopy {
-                padding: 2rem 5% 1rem;
+            .category-intro h2 {
+                font-size: 1.5rem;
             }
         }
         
@@ -822,12 +475,13 @@
                 height: 40px;
             }
             
-            .hero-content h1 {
-                font-size: 1.5rem;
+            .nav-icons {
+                display: flex !important;
+                gap: 0.8rem;
             }
             
-            section {
-                padding: 2rem 5%;
+            .hero-content h1 {
+                font-size: 1.5rem;
             }
             
             .hero {
@@ -837,51 +491,6 @@
             .hero-content {
                 white-space: normal;
             }
-        }
-        
-        /* 商品画像の設定 */
-        .product-image.coaster {
-            background-image: url('57a8e09b6e6051a64fd3d83ffe006737.jpg');
-        }
-        
-        .product-image.toothbrush-base {
-            background-image: url('2d8d1acd9854d678361a3adc4d664f60.jpg');
-        }
-        
-        .product-image.umbrella-stand {
-            background-image: url('1bb997270051b8c2836bca81826e4126.jpg');
-        }
-        
-        .product-image.clock {
-            background-image: url('25b37c8376777316528119c0653957e9.jpg');
-        }
-        
-        .product-image.pot-holder-fish {
-            background-image: url('fbd2c205dd891e525fe46534c69285c5.jpg');
-        }
-        
-        .product-image.toothbrush-large {
-            background-image: url('927d228044ed3ca51c00ddcc27eb1a93.jpg');
-        }
-        
-        .product-image.toothbrush-round {
-            background-image: url('5699a9421e0324bf7bacaec14f04a7a9.jpg');
-        }
-        
-        .product-image.toothbrush-slant {
-            background-image: url('40188bd5cdbe3249f1f4c56e0397e199.jpg');
-        }
-        
-        .product-image.vase {
-            background-image: url('350a2aae2c972991a8d42fd9f7833142.jpg');
-        }
-        
-        .product-image.pen-tray {
-            background-image: url('3b871bbd903fa6f3a1d1472ba34c7337.jpg');
-        }
-        
-        .product-image.tape-cutter {
-            background-image: url('3f4780105ace673fb862fcb2a0d6f2e2.jpg');
         }
         
         /* Lazy loading対応 */
@@ -900,17 +509,15 @@
     <header>
         <nav>
             <div class="nav-logo">
-                <a href="#"><img src="logo.png" alt="303 ロゴ" class="logo-img" loading="lazy"></a>
+                <a href="index.html"><img src="logo.png" alt="303 ロゴ" class="logo-img" loading="lazy"></a>
             </div>
             <div class="nav-center">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Product</a></li>
-                    <li><a href="https://303furniture.net/" target="_blank">Furniture</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#feature">Feature</a></li>
-                    <li><a href="#store">Store</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="furniture.html">Furniture</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-right">
@@ -933,13 +540,11 @@
         <!-- モバイルメニュー -->
         <div class="mobile-menu">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Product</a></li>
-                <li><a href="https://303furniture.net/" target="_blank">Furniture</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#feature">Feature</a></li>
-                <li><a href="#store">Store</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="furniture.html">Furniture</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -948,273 +553,49 @@
     <section class="hero">
         <div class="hero-content">
             <h1>素材の静けさを暮らしのそばに</h1>
-            <p>303（サンマルサン）｜大谷石や無垢材を用いたインテリア小物</p>
+            <p>303｜大谷石や無垢材を用いた暮らしの道具</p>
         </div>
     </section>
 
-    <!-- ブランドキャッチコピー -->
-    <section class="brand-catchcopy">
-        <h2>自然素材を生かすインテリア小物・家具</h2>
-        <p>
-            303（サンマルサン）は、大谷石や無垢材などの自然素材を中心に、<br>
-            ひとつひとつ丁寧に仕上げた暮らしの道具を制作しています。<br><br>
-            素材が持つ本来の美しさを大切に、<br>
-            現代の生活に寄り添うシンプルな機能性を追求しています。<br><br>
-            オーダー家具や空間提案も行っており、<br>
-            お客様のライフスタイルに合わせたご提案をいたします。
-        </p>
-    </section>
-
-    <!-- About セクション -->
-    <section id="about" class="brand-intro">
-        <div class="brand-container">
-            <div class="brand-text">
-                <p class="brand-description">
-                    303（サンマルサン）は、日々の暮らしを豊かにするインテリア小物・家具のブランドです。<br><br>
-                    大谷石や無垢材などの自然素材を使い、ひとつひとつ手作業で仕上げています。<br><br>
-                    <span class="furniture-note">家具のコレクションは<a href="https://303furniture.net" target="_blank" class="inline-link">303furniture</a>にてご紹介しています。</span>
-                </p>
-            </div>
-            <div class="brand-visual"></div>
+    <!-- カテゴリ分岐セクション -->
+    <section class="category-section">
+        <div class="category-intro">
+            <h2>暮らしを豊かにする、ふたつの道</h2>
+            <p>
+                303では、日々の暮らしに寄り添う雑貨と、<br>
+                空間全体を考えた家具・造作をご提案しています。<br>
+                それぞれの想いから、お選びください。
+            </p>
         </div>
-    </section>
-
-    <!-- Feature セクション -->
-    <section id="feature" class="materials">
-        <h2>Feature</h2>
-        <p class="section-subtitle">素材の魅力</p>
-        <div class="materials-grid">
-            <div class="material-card">
-                <div class="material-image stone"></div>
-                <div class="material-info">
-                    <h3>大谷石</h3>
-                    <p>栃木県宇都宮市で採掘される大谷石。柔らかな風合いと、独特の多孔質が生み出す表情。調湿性に優れ、暮らしに寄り添う石です。</p>
-                </div>
-            </div>
-            <div class="material-card">
-                <div class="material-image wood"></div>
-                <div class="material-info">
-                    <h3>無垢材</h3>
-                    <p>木が持つ本来の美しさをそのままに。使い込むほどに深まる色艶、手に馴染む質感。時間とともに育てる楽しみがあります。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product セクション -->
-    <section id="products" class="products">
-        <h2>Product</h2>
-        <p class="section-subtitle">暮らしの道具たち</p>
         
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-image coaster">
-                    <span class="product-tag">大谷石</span>
+        <div class="category-grid">
+            <a href="product.html" class="category-card">
+                <div class="category-image product"></div>
+                <div class="category-content">
+                    <h3>雑貨・インテリア小物</h3>
+                    <p>大谷石や無垢材を使った、毎日の暮らしに寄り添う小さな道具たち。コースターから花器まで、手にとって愛でる雑貨をご紹介します。</p>
+                    <span class="category-button">雑貨のご購入はこちら</span>
                 </div>
-                <div class="product-info">
-                    <h3>大谷石コースター</h3>
-                    <p class="product-price">¥1,500</p>
-                    <a href="https://303furniture.thebase.in/items/85893893" target="_blank" class="product-link" aria-label="大谷石コースターの詳細を見る">→</a>
-                </div>
-            </div>
+            </a>
             
-            <div class="product-card">
-                <div class="product-image toothbrush-base">
-                    <span class="product-tag">大谷石</span>
+            <a href="furniture.html" class="category-card">
+                <div class="category-image furniture"></div>
+                <div class="category-content">
+                    <h3>家具・空間提案</h3>
+                    <p>オーダー家具から現場造作、空間全体の提案まで。お客様の暮らしに合わせて、自然素材を活かした家具と空間をつくります。</p>
+                    <span class="category-button">家具・空間提案のご相談はこちら</span>
                 </div>
-                <div class="product-info">
-                    <h3>歯磨き立てベース</h3>
-                    <p class="product-price">¥16,000</p>
-                    <a href="https://303furniture.thebase.in/items/16961377" target="_blank" class="product-link" aria-label="歯磨き立てベースの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image umbrella-stand">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 傘立て</h3>
-                    <p class="product-price">¥60,000</p>
-                    <a href="https://303furniture.thebase.in/items/76730502" target="_blank" class="product-link" aria-label="大谷石傘立ての詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image clock">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 時計</h3>
-                    <p class="product-price">¥29,000</p>
-                    <a href="https://303furniture.thebase.in/items/75017871" target="_blank" class="product-link" aria-label="大谷石時計の詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image pot-holder-fish">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 鍋敷 サカナ</h3>
-                    <p class="product-price">¥70,000</p>
-                    <a href="https://303furniture.thebase.in/items/74672341" target="_blank" class="product-link" aria-label="大谷石鍋敷サカナの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image toothbrush-large">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 歯磨き立て マル 大</h3>
-                    <p class="product-price">¥8,000</p>
-                    <a href="https://303furniture.thebase.in/items/927d228044ed3ca51c00ddcc27eb1a93" target="_blank" class="product-link" aria-label="大谷石歯磨き立て マル 大の詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image toothbrush-round">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 歯磨き立て マル</h3>
-                    <p class="product-price">¥6,000</p>
-                    <a href="https://303furniture.thebase.in/items/73600217" target="_blank" class="product-link" aria-label="大谷石歯磨き立て マルの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image toothbrush-slant">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 歯磨き立て ナナメ</h3>
-                    <p class="product-price">¥6,000</p>
-                    <a href="https://303furniture.thebase.in/items/73599952" target="_blank" class="product-link" aria-label="大谷石歯磨き立て ナナメの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image vase">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 一輪挿し</h3>
-                    <p class="product-price">¥18,000</p>
-                    <a href="https://303furniture.thebase.in/items/72894494" target="_blank" class="product-link" aria-label="大谷石一輪挿しの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image pen-tray">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 ペントレイ</h3>
-                    <p class="product-price">¥17,000</p>
-                    <a href="https://303furniture.thebase.in/items/72389361" target="_blank" class="product-link" aria-label="大谷石ペントレイの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image tape-cutter">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 テープカッター</h3>
-                    <p class="product-price">¥33,000</p>
-                    <a href="https://303furniture.thebase.in/items/71947273" target="_blank" class="product-link" aria-label="大谷石テープカッターの詳細を見る">→</a>
-                </div>
-            </div>
+            </a>
         </div>
     </section>
 
-    <!-- Store セクション -->
-    <section id="store" class="shop-info">
-        <h2>Store</h2>
-        <p class="section-subtitle">オンラインショップ</p>
-        <div class="shop-container">
-            <div class="shop-content">
-                <p class="shop-intro">
-                    303（サンマルサン）の商品は、オンラインショップにてご購入いただけます。大谷石や無垢材を使った暮らしの道具たちをぜひご覧ください。
-                </p>
-                <div class="shop-button-container">
-                    <a href="https://303furniture.thebase.in" target="_blank" class="btn-shop-large">
-                        ONLINE SHOP
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- News セクション -->
-    <section id="news" class="news">
-        <h2>News</h2>
-        <p class="section-subtitle">お知らせ</p>
-        <div class="news-container">
-            <div class="news-list">
-                <article class="news-item">
-                    <time>2025.01.10</time>
-                    <h3>ハンドメイドインジャパンフェス（HMJ）に出店します</h3>
-                    <p>2025年春に開催予定のハンドメイドインジャパンフェス（HMJ）に出店いたします。大谷石や無垢材を使った新作も展示予定です。詳細は<a href="https://hmj-fes.jp" target="_blank" style="color: #444; text-decoration: underline;">公式サイト</a>をご覧ください。</p>
-                </article>
-                <article class="news-item">
-                    <time>2024.12.20</time>
-                    <h3>年末年始の営業について</h3>
-                    <p>12月29日〜1月3日まで休業いたします。新年は1月4日より通常営業いたします。</p>
-                </article>
-                <article class="news-item">
-                    <time>2024.11.15</time>
-                    <h3>新商品のご案内</h3>
-                    <p>大谷石のフラワーベースが新登場しました。自然の風合いを活かしたデザインです。</p>
-                </article>
-                <article class="news-item">
-                    <time>2024.10.01</time>
-                    <h3>展示会のお知らせ</h3>
-                    <p>10月20日〜22日 東京ビッグサイトにて開催の展示会に出展いたします。</p>
-                </article>
-                <article class="news-item">
-                    <time>2024.09.10</time>
-                    <h3>大谷石コースター入荷</h3>
-                    <p>人気の大谷石コースターが再入荷いたました。数量限定ですのでお早めに。</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact セクション -->
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p class="section-subtitle">お問い合わせ</p>
-        <div class="form-message" id="formMessage">
-            お問い合わせありがとうございます。メールソフトが開きますので、そちらから送信してください。
-        </div>
-        <form class="contact-form" id="contactForm">
-            <div class="form-group">
-                <label for="name">お名前 *</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">メールアドレス *</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">件名</label>
-                <input type="text" id="subject" name="subject">
-            </div>
-            <div class="form-group">
-                <label for="message">お問い合わせ内容 *</label>
-                <textarea id="message" name="message" placeholder="商品についてのご質問やご要望などお気軽にお書きください" required></textarea>
-            </div>
-            <button type="button" class="btn-submit" id="submitBtn" onclick="sendEmail()">送信する</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
+    <!-- フッター -->
     <footer>
         <div class="footer-content">
             <img src="logo.png" alt="303 ロゴ" class="footer-logo-img" loading="lazy">
+            <div class="footer-contact">
+                <a href="mailto:info@303furniture.net">info@303furniture.net</a>
+            </div>
             <p class="copyright">&copy; 2025 303（サンマルサン）. All rights reserved.</p>
         </div>
     </footer>
@@ -1267,73 +648,6 @@
             }
         });
 
-        // 商品カードのクリックイベント
-        document.querySelectorAll('.product-card').forEach(card => {
-            card.addEventListener('click', (e) => {
-                if (!e.target.classList.contains('product-link')) {
-                    const link = card.querySelector('.product-link:not(.disabled)');
-                    if (link) {
-                        link.click();
-                    }
-                }
-            });
-        });
-
-        // お問い合わせフォーム改善版
-        function sendEmail() {
-            const submitBtn = document.getElementById('submitBtn');
-            const formMessage = document.getElementById('formMessage');
-            const form = document.getElementById('contactForm');
-            
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const subject = document.getElementById('subject').value.trim() || 'お問い合わせ';
-            const message = document.getElementById('message').value.trim();
-            
-            // バリデーション
-            if (!name || !email || !message) {
-                alert('必須項目を入力してください。');
-                return;
-            }
-            
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(email)) {
-                alert('正しいメールアドレスを入力してください。');
-                return;
-            }
-            
-            // ボタンを無効化
-            submitBtn.disabled = true;
-            submitBtn.textContent = '送信中...';
-            
-            // メール本文を作成
-            const emailBody = `お名前: ${name}%0D%0A` +
-                            `メールアドレス: ${email}%0D%0A` +
-                            `件名: ${subject}%0D%0A%0D%0A` +
-                            `お問い合わせ内容:%0D%0A${message}`;
-            
-            // メールソフトを開く
-            window.location.href = `mailto:info@303furniture.net?subject=【303】${subject}&body=${emailBody}`;
-            
-            // 送信完了処理
-            setTimeout(() => {
-                // フォームをクリア
-                form.reset();
-                
-                // 成功メッセージを表示
-                formMessage.classList.add('show');
-                
-                // ボタンを元に戻す
-                submitBtn.disabled = false;
-                submitBtn.textContent = '送信する';
-                
-                // 3秒後にメッセージを非表示
-                setTimeout(() => {
-                    formMessage.classList.remove('show');
-                }, 3000);
-            }, 1000);
-        }
-
         // 画像の遅延読み込み
         const lazyImages = document.querySelectorAll('img[loading="lazy"]');
         
@@ -1368,15 +682,6 @@
         // 初期状態でbodyを非表示に
         document.body.style.opacity = '0';
         document.body.style.transition = 'opacity 0.5s ease';
-    </script>
-
-    <!-- Google Analytics（準備）-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        // gtag('config', 'GA_MEASUREMENT_ID'); // 実際のIDに置き換えて有効化
     </script>
 </body>
 </html>
