@@ -54,7 +54,7 @@
             font-weight: 300;
         }
         
-        /* ヘッダー改善 - 新しい構造 */
+        /* ヘッダー改善 - 完全な3カラム構造 */
         header {
             position: fixed;
             top: 0;
@@ -64,33 +64,35 @@
             z-index: 1000;
             border-bottom: 1px solid rgba(0,0,0,0.05);
             transition: all 0.3s ease;
+            padding: 0;
+            margin: 0;
         }
         
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 5%;
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 15px 2%;
             height: 70px;
+            width: 100%;
+            max-width: none;
         }
         
         .header-left {
-            flex: 1;
+            flex: 0 0 auto;
             display: flex;
-            justify-content: flex-start;
+            align-items: center;
         }
         
-        .header-logo {
+        .header-center {
             flex: 1;
-            text-align: center;
+            display: flex;
+            justify-content: center;
         }
         
         .header-right {
-            flex: 1;
+            flex: 0 0 auto;
             display: flex;
-            justify-content: flex-end;
             align-items: center;
             gap: 1rem;
         }
@@ -110,6 +112,8 @@
             gap: 2rem;
             list-style: none;
             align-items: center;
+            margin: 0;
+            padding: 0;
         }
         
         .nav-links a {
@@ -144,69 +148,8 @@
             height: 20px;
         }
         
-        /* ハンバーガーメニュー */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 4px;
-            padding: 8px;
-        }
-        
-        .hamburger span {
-            width: 25px;
-            height: 2px;
-            background: #444;
-            transition: 0.3s;
-        }
-        
-        .hamburger.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-        
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-        
-        .hamburger.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -6px);
-        }
-        
-        /* モバイルメニュー */
-        .mobile-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: white;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-            border-radius: 0 0 15px 15px;
-            padding: 1rem;
-        }
-        
-        .mobile-menu.active {
-            display: block;
-        }
-        
-        .mobile-menu ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .mobile-menu li {
-            margin-bottom: 1rem;
-        }
-        
-        .mobile-menu a {
-            text-decoration: none;
-            color: #444;
-            font-size: 1rem;
-            font-weight: 300;
-            display: block;
-            padding: 10px;
-            text-align: center;
-        }
+        /* ハンバーガーメニュー - 削除 */
+        /* モバイルメニュー - 削除 */
         
         /* ヒーロー画像修正 - 添付画像のように左右余白を最小に + IMG_3350.JPG + 3アイテム中央配置 */
         .hero {
@@ -743,35 +686,29 @@
         /* レスポンシブ対応強化 */
         @media (max-width: 768px) {
             .header-container {
-                flex-direction: column;
-                height: auto;
-                padding: 10px 5%;
-            }
-            
-            .header-left,
-            .header-logo,
-            .header-right {
-                flex: none;
-                width: 100%;
-                text-align: center;
-                margin-bottom: 10px;
+                padding: 10px 2%;
+                height: 60px;
             }
             
             .nav-links {
-                display: none;
+                gap: 1rem;
             }
             
-            .nav-icons {
-                display: flex;
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+            
+            .logo-img {
+                height: 45px;
             }
             
             .hamburger {
-                display: flex;
+                display: none;
             }
             
             .hero {
                 height: 80vh;
-                margin: 75px 2% 0;
+                margin: 60px 2% 0;
                 border-radius: 10px;
             }
             
@@ -815,6 +752,18 @@
         }
         
         @media (max-width: 480px) {
+            .nav-links {
+                gap: 0.8rem;
+            }
+            
+            .nav-links a {
+                font-size: 0.7rem;
+            }
+            
+            .logo-img {
+                height: 40px;
+            }
+            
             .hero-content h1 {
                 font-size: 1.5rem;
             }
@@ -824,7 +773,7 @@
             }
             
             .hero {
-                margin: 70px 1% 0;
+                margin: 60px 1% 0;
             }
             
             .hero-content {
@@ -893,6 +842,9 @@
     <header>
         <div class="header-container">
             <div class="header-left">
+                <a href="#"><img src="logo.png" alt="303 ロゴ" class="logo-img" loading="lazy"></a>
+            </div>
+            <div class="header-center">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#products">Product</a></li>
@@ -903,9 +855,6 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="header-logo">
-                <a href="#"><img src="logo.png" alt="303 ロゴ" class="logo-img" loading="lazy"></a>
-            </div>
             <div class="header-right">
                 <div class="nav-icons">
                     <a href="https://www.instagram.com/303_product_2019/" target="_blank" class="nav-icon" aria-label="Instagram">
@@ -915,25 +864,7 @@
                         <img src="shopping-cart.png" alt="Shop" loading="lazy">
                     </a>
                 </div>
-                <div class="hamburger" aria-label="メニュー">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </div>
-        </div>
-        
-        <!-- モバイルメニュー -->
-        <div class="mobile-menu">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Product</a></li>
-                <li><a href="https://303furniture.net/" target="_blank">Furniture</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#feature">Feature</a></li>
-                <li><a href="#store">Store</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
         </div>
     </header>
 
