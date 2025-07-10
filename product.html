@@ -432,7 +432,7 @@
         
         .product-tag {
             position: absolute;
-            top: 15px;
+            bottom: 15px;
             right: 15px;
             background: rgba(255,255,255,0.95);
             padding: 6px 15px;
@@ -566,87 +566,7 @@
             line-height: 1.6;
         }
         
-        /* Contact セクション */
-        .contact-form {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-            font-weight: 300;
-            color: #444;
-        }
-        
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            font-family: inherit;
-            font-size: 0.9rem;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            background: #fafafa;
-            font-weight: 300;
-            color: #444;
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #444;
-            background: white;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
-        
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-            line-height: 1.6;
-        }
-        
-        .btn-submit {
-            width: 100%;
-            padding: 0.9rem;
-            background: white;
-            color: #444;
-            border: 1px solid #ddd;
-            border-radius: 25px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: inherit;
-            font-weight: 300;
-            letter-spacing: 0.05em;
-        }
-        
-        .btn-submit:hover {
-            background: #f8f8f8;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-        }
-        
-        .form-message {
-            background: #d4edda;
-            color: #155724;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            text-align: center;
-            font-size: 0.9rem;
-            display: none;
-        }
-        
-        .form-message.show {
-            display: block;
-        }
+        /* Contact セクション - 不要なCSSを削除 */
         
         /* Footer */
         footer {
@@ -1105,7 +1025,7 @@
         <div class="news-container">
             <div class="news-list">
                 <article class="news-item">
-                    <time>2025.01.10</time>
+                    <time>2025.07.9</time>
                     <h3>ハンドメイドインジャパンフェス（HMJ）に出店します</h3>
                     <p>2025年春に開催予定のハンドメイドインジャパンフェス（HMJ）に出店いたします。大谷石や無垢材を使った新作も展示予定です。詳細は<a href="https://hmj-fes.jp" target="_blank" style="color: #444; text-decoration: underline;">公式サイト</a>をご覧ください。</p>
                 </article>
@@ -1137,28 +1057,15 @@
     <section id="contact" class="contact">
         <h2>Contact</h2>
         <p class="section-subtitle">お問い合わせ</p>
-        <div class="form-message" id="formMessage">
-            お問い合わせありがとうございます。メールソフトが開きますので、そちらから送信してください。
+        <div class="contact-container" style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1rem; color: #555; line-height: 1.8; font-weight: 300; margin-bottom: 2rem;">
+                商品についてのご質問やご要望など、<br>
+                お気軽にお問い合わせください。
+            </p>
+            <a href="mailto:info@303furniture.net" style="display: inline-block; padding: 0.9rem 2.5rem; background: white; color: #444; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 300; transition: all 0.3s ease; letter-spacing: 0.1em; font-family: 'Noto Serif JP', serif; border: 1px solid #ddd;" onmouseover="this.style.background='#f8f8f8'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)';" onmouseout="this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                お問い合わせはこちら
+            </a>
         </div>
-        <form class="contact-form" id="contactForm">
-            <div class="form-group">
-                <label for="name">お名前 *</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">メールアドレス *</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">件名</label>
-                <input type="text" id="subject" name="subject">
-            </div>
-            <div class="form-group">
-                <label for="message">お問い合わせ内容 *</label>
-                <textarea id="message" name="message" placeholder="商品についてのご質問やご要望などお気軽にお書きください" required></textarea>
-            </div>
-            <button type="button" class="btn-submit" id="submitBtn" onclick="sendEmail()">送信する</button>
-        </form>
     </section>
 
     <!-- Footer -->
@@ -1231,61 +1138,6 @@
                 }
             });
         });
-
-        // お問い合わせフォーム
-        function sendEmail() {
-            const submitBtn = document.getElementById('submitBtn');
-            const formMessage = document.getElementById('formMessage');
-            const form = document.getElementById('contactForm');
-            
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const subject = document.getElementById('subject').value.trim() || 'お問い合わせ';
-            const message = document.getElementById('message').value.trim();
-            
-            // バリデーション
-            if (!name || !email || !message) {
-                alert('必須項目を入力してください。');
-                return;
-            }
-            
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(email)) {
-                alert('正しいメールアドレスを入力してください。');
-                return;
-            }
-            
-            // ボタンを無効化
-            submitBtn.disabled = true;
-            submitBtn.textContent = '送信中...';
-            
-            // メール本文を作成
-            const emailBody = `お名前: ${name}%0D%0A` +
-                            `メールアドレス: ${email}%0D%0A` +
-                            `件名: ${subject}%0D%0A%0D%0A` +
-                            `お問い合わせ内容:%0D%0A${message}`;
-            
-            // メールソフトを開く
-            window.location.href = `mailto:info@303furniture.net?subject=【303】${subject}&body=${emailBody}`;
-            
-            // 送信完了処理
-            setTimeout(() => {
-                // フォームをクリア
-                form.reset();
-                
-                // 成功メッセージを表示
-                formMessage.classList.add('show');
-                
-                // ボタンを元に戻す
-                submitBtn.disabled = false;
-                submitBtn.textContent = '送信する';
-                
-                // 3秒後にメッセージを非表示
-                setTimeout(() => {
-                    formMessage.classList.remove('show');
-                }, 3000);
-            }, 1000);
-        }
     </script>
 </body>
 </html>
