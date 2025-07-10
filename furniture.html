@@ -1,3 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>303｜家具・空間提案 | 木と石と、暮らしのかたち。</title>
+    
+    <!-- SEO対策 -->
+    <meta name="description" content="303の家具と空間提案。オーダー家具、現場造作、宿泊施設・店舗の空間レイアウトまで。大谷石や無垢材を使った自然素材の家具づくりをご提案します。">
+    <meta name="keywords" content="303,サンマルサン,オーダー家具,造作家具,空間提案,大谷石,無垢材,家具,インテリアデザイン,自然素材">
+    
+    <!-- OGP設定 -->
+    <meta property="og:title" content="303｜家具・空間提案">
+    <meta property="og:description" content="303の家具と空間提案。オーダー家具、現場造作、宿泊施設・店舗の空間レイアウトまで。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://303product.github.io/303product-site/furniture.html">
+    <meta property="og:image" content="https://303product.github.io/303product-site/top.jpg">
+    <meta property="og:site_name" content="303">
+    <meta property="og:locale" content="ja_JP">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="303｜家具・空間提案">
+    <meta name="twitter:description" content="303の家具と空間提案。オーダー家具、現場造作、宿泊施設・店舗の空間レイアウトまで。">
+    <meta name="twitter:image" content="https://303product.github.io/303product-site/top.jpg">
+    
+    <!-- ファビコン -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Google Fonts - Noto Serif JP (クールな明朝体) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: "Noto Serif JP", serif;
+            line-height: 1.8;
+            color: #444;
+            background-color: #fefefe;
+            font-weight: 300;
+        }
+        
+        /* ヘッダー - product.htmlと同じ仕様 */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            padding: 15px 3%;
+            height: 70px;
+            width: 100%;
+        }
+        
+        .nav-logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .logo-img {
+            height: 52px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo-img:hover {
+            transform: scale(1.05);
+        }
+        
+        .nav-center {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #444;
+            font-size: 0.9rem;
+            font-weight: 300;
+            transition: opacity 0.3s ease;
+            letter-spacing: 0.05em;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.6;
+        }
+        
+        .nav-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        .nav-icons {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .nav-icon {
+            transition: opacity 0.3s ease;
+            display: block;
+        }
+        
+        .nav-icon:hover {
+            opacity: 0.7;
+        }
+        
+        .nav-icon img {
+            width: 20px;
+            height: 20px;
+            display: block;
+        }
+        
         /* ハンバーガーメニュー */
         .hamburger {
             display: none;
@@ -505,7 +650,7 @@
                 <ul class="nav-links">
                     <li><a href="product.html">Product</a></li>
                     <li><a href="furniture.html">Furniture</a></li>
-                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="https://303furniture.thebase.in" target="_blank">Shop</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -532,7 +677,7 @@
             <ul>
                 <li><a href="product.html">Product</a></li>
                 <li><a href="furniture.html">Furniture</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="https://303furniture.thebase.in" target="_blank">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -734,159 +879,4 @@
         document.body.style.transition = 'opacity 0.5s ease';
     </script>
 </body>
-</html><!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>303｜家具・空間提案 | 木と石と、暮らしのかたち。</title>
-    
-    <!-- SEO対策 -->
-    <meta name="description" content="303の家具と空間提案。オーダー家具、現場造作、宿泊施設・店舗の空間レイアウトまで。大谷石や無垢材を使った自然素材の家具づくりをご提案します。">
-    <meta name="keywords" content="303,サンマルサン,オーダー家具,造作家具,空間提案,大谷石,無垢材,家具,インテリアデザイン,自然素材">
-    
-    <!-- OGP設定 -->
-    <meta property="og:title" content="303｜家具・空間提案">
-    <meta property="og:description" content="303の家具と空間提案。オーダー家具、現場造作、宿泊施設・店舗の空間レイアウトまで。">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://303product.github.io/303product-site/furniture.html">
-    <meta property="og:image" content="https://303product.github.io/303product-site/top.jpg">
-    <meta property="og:site_name" content="303">
-    <meta property="og:locale" content="ja_JP">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="303｜家具・空間提案">
-    <meta name="twitter:description" content="303の家具と空間提案。オーダー家具、現場造作、宿泊施設・店舗の空間レイアウトまで。">
-    <meta name="twitter:image" content="https://303product.github.io/303product-site/top.jpg">
-    
-    <!-- ファビコン -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    
-    <!-- Google Fonts - Noto Serif JP (クールな明朝体) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            font-family: "Noto Serif JP", serif;
-            line-height: 1.8;
-            color: #444;
-            background-color: #fefefe;
-            font-weight: 300;
-        }
-        
-        /* ヘッダー - product.htmlと同じ仕様 */
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-        }
-        
-        nav {
-            display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            align-items: center;
-            padding: 15px 3%;
-            height: 70px;
-            width: 100%;
-        }
-        
-        .nav-logo {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-        
-        .logo-img {
-            height: 52px;
-            width: auto;
-            transition: transform 0.3s ease;
-        }
-        
-        .logo-img:hover {
-            transform: scale(1.05);
-        }
-        
-        .nav-center {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: #444;
-            font-size: 0.9rem;
-            font-weight: 300;
-            transition: opacity 0.3s ease;
-            letter-spacing: 0.05em;
-        }
-        
-        .nav-links a:hover {
-            opacity: 0.6;
-        }
-        
-        .nav-right {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-        
-        .nav-icons {
-            display: flex !important;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .nav-icon {
-            transition: opacity 0.3s ease;
-            display: block !important;
-        }
-        
-        .nav-icon:hover {
-            opacity: 0.7;
-        }
-        
-        .nav-icon img {
-            width: 20px;
-            height: 20px;
-            display: block;
-        }
-        
-        /* ハンバーガーメニュー */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 4px;
-            padding: 8px;
-        }
-        
-        .hamburger span {
-            
+</html>
