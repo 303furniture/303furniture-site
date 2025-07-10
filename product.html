@@ -125,13 +125,14 @@
         }
         
         .nav-icons {
-            display: flex;
+            display: flex !important;
             align-items: center;
             gap: 1rem;
         }
         
         .nav-icon {
             transition: opacity 0.3s ease;
+            display: block !important;
         }
         
         .nav-icon:hover {
@@ -141,6 +142,7 @@
         .nav-icon img {
             width: 20px;
             height: 20px;
+            display: block;
         }
         
         .nav-icon {
@@ -753,6 +755,20 @@
         }
         
         /* レスポンシブ対応強化 */
+        @media (min-width: 769px) {
+            .nav-links {
+                display: flex !important;
+            }
+            
+            .nav-icons {
+                display: flex !important;
+            }
+            
+            .hamburger {
+                display: none !important;
+            }
+        }
+        
         @media (max-width: 768px) {
             nav {
                 grid-template-columns: auto 1fr auto;
@@ -762,6 +778,10 @@
             
             .nav-links {
                 display: none;
+            }
+            
+            .nav-icons {
+                display: flex !important;
             }
             
             .hamburger {
@@ -820,6 +840,11 @@
         @media (max-width: 480px) {
             .logo-img {
                 height: 40px;
+            }
+            
+            .nav-icons {
+                display: flex !important;
+                gap: 0.8rem;
             }
             
             .hero-content h1 {
