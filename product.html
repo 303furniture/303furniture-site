@@ -1,6 +1,4 @@
-        <div class="news-container">
-            <div class="news-list">
-                <article class="news-item<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -125,14 +123,14 @@
         }
         
         .nav-icons {
-            display: flex !important;
+            display: flex;
             align-items: center;
             gap: 1rem;
         }
         
         .nav-icon {
             transition: opacity 0.3s ease;
-            display: block !important;
+            display: block;
         }
         
         .nav-icon:hover {
@@ -143,19 +141,6 @@
             width: 20px;
             height: 20px;
             display: block;
-        }
-        
-        .nav-icon {
-            transition: opacity 0.3s ease;
-        }
-        
-        .nav-icon:hover {
-            opacity: 0.7;
-        }
-        
-        .nav-icon img {
-            width: 20px;
-            height: 20px;
         }
         
         /* ハンバーガーメニュー */
@@ -546,7 +531,7 @@
             cursor: not-allowed;
         }
         
-        /* Store セクション - ボタンデザイン改善 */
+        /* Shop セクション - ボタンデザイン改善 */
         .shop-info {
             background: #fafaf8;
         }
@@ -728,24 +713,39 @@
         footer {
             background: #fefefe;
             color: #555;
-            padding: 2rem 5%;
+            padding: 3rem 5%;
             text-align: center;
             border-top: 1px solid #eee;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
         
         .footer-content {
-            max-width: 1200px;
+            max-width: 600px;
             margin: 0 auto;
         }
         
         .footer-logo-img {
             height: 52px;
             width: auto;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+        
+        .footer-contact {
+            margin-bottom: 2rem;
+        }
+        
+        .footer-contact a {
+            color: #555;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: opacity 0.3s ease;
+        }
+        
+        .footer-contact a:hover {
+            opacity: 0.7;
         }
         
         .copyright {
@@ -925,483 +925,14 @@
     <header>
         <nav>
             <div class="nav-logo">
-                <a href="#"><img src="logo.png" alt="303 ロゴ" class="logo-img" loading="lazy"></a>
+                <a href="index.html"><img src="logo.png" alt="303 ロゴ" class="logo-img" loading="lazy"></a>
             </div>
             <div class="nav-center">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#products">Product</a></li>
-                    <li><a href="https://303furniture.net/" target="_blank">Furniture</a></li>
+                    <li><a href="furniture.html">Furniture</a></li>
                     <li><a href="#news">News</a></li>
                     <li><a href="#feature">Feature</a></li>
-                    <li><a href="#store">Store</a></li>
+                    <li><a href="#shop">Shop</a></li>
                     <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="nav-right">
-                <div class="nav-icons">
-                    <a href="https://www.instagram.com/303_product_2019/" target="_blank" class="nav-icon" aria-label="Instagram">
-                        <img src="instagram_logo.png" alt="Instagram" loading="lazy">
-                    </a>
-                    <a href="https://303furniture.thebase.in" target="_blank" class="nav-icon" aria-label="オンラインショップ">
-                        <img src="shopping-cart.png" alt="Shop" loading="lazy">
-                    </a>
-                </div>
-                <div class="hamburger" aria-label="メニュー">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-        
-        <!-- モバイルメニュー -->
-        <div class="mobile-menu">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Product</a></li>
-                <li><a href="https://303furniture.net/" target="_blank">Furniture</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#feature">Feature</a></li>
-                <li><a href="#store">Store</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <!-- ヒーローセクション -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>素材の静けさを暮らしのそばに</h1>
-            <p>303（サンマルサン）｜大谷石や無垢材を用いたインテリア小物</p>
-        </div>
-    </section>
-
-    <!-- ブランドキャッチコピー -->
-    <section class="brand-catchcopy">
-        <h2>自然素材を生かすインテリア小物・家具</h2>
-        <p>
-            303（サンマルサン）は、大谷石や無垢材などの自然素材を中心に、<br>
-            ひとつひとつ丁寧に仕上げた暮らしの道具を制作しています。<br><br>
-            素材が持つ本来の美しさを大切に、<br>
-            現代の生活に寄り添うシンプルな機能性を追求しています。<br><br>
-            オーダー家具や空間提案も行っており、<br>
-            お客様のライフスタイルに合わせたご提案をいたします。
-        </p>
-    </section>
-
-    <!-- About セクション -->
-    <section id="about" class="brand-intro">
-        <div class="brand-container">
-            <div class="brand-text">
-                <p class="brand-description">
-                    303（サンマルサン）は、日々の暮らしを豊かにするインテリア小物・家具のブランドです。<br><br>
-                    大谷石や無垢材などの自然素材を使い、ひとつひとつ手作業で仕上げています。<br><br>
-                    <span class="furniture-note">家具のコレクションは<a href="https://303furniture.net" target="_blank" class="inline-link">303furniture</a>にてご紹介しています。</span>
-                </p>
-            </div>
-            <div class="brand-visual"></div>
-        </div>
-    </section>
-
-    <!-- Feature セクション -->
-    <section id="feature" class="materials">
-        <h2>Feature</h2>
-        <p class="section-subtitle">素材の魅力</p>
-        <div class="materials-grid">
-            <div class="material-card">
-                <div class="material-image stone"></div>
-                <div class="material-info">
-                    <h3>大谷石</h3>
-                    <p>栃木県宇都宮市で採掘される大谷石。柔らかな風合いと、独特の多孔質が生み出す表情。調湿性に優れ、暮らしに寄り添う石です。</p>
-                </div>
-            </div>
-            <div class="material-card">
-                <div class="material-image wood"></div>
-                <div class="material-info">
-                    <h3>無垢材</h3>
-                    <p>木が持つ本来の美しさをそのままに。使い込むほどに深まる色艶、手に馴染む質感。時間とともに育てる楽しみがあります。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product セクション -->
-    <section id="products" class="products">
-        <h2>Product</h2>
-        <p class="section-subtitle">暮らしの道具たち</p>
-        
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-image coaster">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石コースター</h3>
-                    <p class="product-price">¥1,500</p>
-                    <a href="https://303furniture.thebase.in/items/85893893" target="_blank" class="product-link" aria-label="大谷石コースターの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image toothbrush-base">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>歯磨き立てベース</h3>
-                    <p class="product-price">¥16,000</p>
-                    <a href="https://303furniture.thebase.in/items/16961377" target="_blank" class="product-link" aria-label="歯磨き立てベースの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image umbrella-stand">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 傘立て</h3>
-                    <p class="product-price">¥60,000</p>
-                    <a href="https://303furniture.thebase.in/items/76730502" target="_blank" class="product-link" aria-label="大谷石傘立ての詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image clock">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 時計</h3>
-                    <p class="product-price">¥29,000</p>
-                    <a href="https://303furniture.thebase.in/items/75017871" target="_blank" class="product-link" aria-label="大谷石時計の詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image pot-holder-fish">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 鍋敷 サカナ</h3>
-                    <p class="product-price">¥70,000</p>
-                    <a href="https://303furniture.thebase.in/items/74672341" target="_blank" class="product-link" aria-label="大谷石鍋敷サカナの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image toothbrush-large">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 歯磨き立て マル 大</h3>
-                    <p class="product-price">¥8,000</p>
-                    <a href="https://303furniture.thebase.in/items/927d228044ed3ca51c00ddcc27eb1a93" target="_blank" class="product-link" aria-label="大谷石歯磨き立て マル 大の詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image toothbrush-round">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 歯磨き立て マル</h3>
-                    <p class="product-price">¥6,000</p>
-                    <a href="https://303furniture.thebase.in/items/73600217" target="_blank" class="product-link" aria-label="大谷石歯磨き立て マルの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image toothbrush-slant">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 歯磨き立て ナナメ</h3>
-                    <p class="product-price">¥6,000</p>
-                    <a href="https://303furniture.thebase.in/items/73599952" target="_blank" class="product-link" aria-label="大谷石歯磨き立て ナナメの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image vase">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 一輪挿し</h3>
-                    <p class="product-price">¥18,000</p>
-                    <a href="https://303furniture.thebase.in/items/72894494" target="_blank" class="product-link" aria-label="大谷石一輪挿しの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image pen-tray">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 ペントレイ</h3>
-                    <p class="product-price">¥17,000</p>
-                    <a href="https://303furniture.thebase.in/items/72389361" target="_blank" class="product-link" aria-label="大谷石ペントレイの詳細を見る">→</a>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image tape-cutter">
-                    <span class="product-tag">大谷石</span>
-                </div>
-                <div class="product-info">
-                    <h3>大谷石 テープカッター</h3>
-                    <p class="product-price">¥33,000</p>
-                    <a href="https://303furniture.thebase.in/items/71947273" target="_blank" class="product-link" aria-label="大谷石テープカッターの詳細を見る">→</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Store セクション -->
-    <section id="store" class="shop-info">
-        <h2>Store</h2>
-        <p class="section-subtitle">オンラインショップ</p>
-        <div class="shop-container">
-            <div class="shop-content">
-                <p class="shop-intro">
-                    303（サンマルサン）の商品は、オンラインショップにてご購入いただけます。大谷石や無垢材を使った暮らしの道具たちをぜひご覧ください。
-                </p>
-                <div class="shop-button-container">
-                    <a href="https://303furniture.thebase.in" target="_blank" class="btn-shop-large">
-                        ONLINE SHOP
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- News セクション -->
-    <section id="news" class="news">
-        <h2>News</h2>
-        <p class="section-subtitle">お知らせ</p>
-        <div class="news-container">
-            <div class="news-list">
-                <article class="news-item">
-                    <time>2025.01.10</time>
-                    <h3>ハンドメイドインジャパンフェス（HMJ）に出店します</h3>
-                    <p>2025年春に開催予定のハンドメイドインジャパンフェス（HMJ）に出店いたします。大谷石や無垢材を使った新作も展示予定です。詳細は<a href="https://hmj-fes.jp" target="_blank" style="color: #444; text-decoration: underline;">公式サイト</a>をご覧ください。</p>
-                </article>
-                <article class="news-item">
-                    <time>2024.12.20</time>
-                    <h3>年末年始の営業について</h3>
-                    <p>12月29日〜1月3日まで休業いたします。新年は1月4日より通常営業いたします。</p>
-                </article>
-                <article class="news-item">
-                    <time>2024.11.15</time>
-                    <h3>新商品のご案内</h3>
-                    <p>大谷石のフラワーベースが新登場しました。自然の風合いを活かしたデザインです。</p>
-                </article>
-                <article class="news-item">
-                    <time>2024.10.01</time>
-                    <h3>展示会のお知らせ</h3>
-                    <p>10月20日〜22日 東京ビッグサイトにて開催の展示会に出展いたします。</p>
-                </article>
-                <article class="news-item">
-                    <time>2024.09.10</time>
-                    <h3>大谷石コースター入荷</h3>
-                    <p>人気の大谷石コースターが再入荷いたました。数量限定ですのでお早めに。</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact セクション -->
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p class="section-subtitle">お問い合わせ</p>
-        <div class="form-message" id="formMessage">
-            お問い合わせありがとうございます。メールソフトが開きますので、そちらから送信してください。
-        </div>
-        <form class="contact-form" id="contactForm">
-            <div class="form-group">
-                <label for="name">お名前 *</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">メールアドレス *</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">件名</label>
-                <input type="text" id="subject" name="subject">
-            </div>
-            <div class="form-group">
-                <label for="message">お問い合わせ内容 *</label>
-                <textarea id="message" name="message" placeholder="商品についてのご質問やご要望などお気軽にお書きください" required></textarea>
-            </div>
-            <button type="button" class="btn-submit" id="submitBtn" onclick="sendEmail()">送信する</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <img src="logo.png" alt="303 ロゴ" class="footer-logo-img" loading="lazy">
-            <p class="copyright">&copy; 2025 303（サンマルサン）. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script>
-        // ハンバーガーメニュー
-        const hamburger = document.querySelector('.hamburger');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            mobileMenu.classList.toggle('active');
-        });
-
-        // モバイルメニューのリンククリック時にメニューを閉じる
-        document.querySelectorAll('.mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                mobileMenu.classList.remove('active');
-            });
-        });
-
-        // スムーススクロール
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const headerHeight = document.querySelector('header').offsetHeight;
-                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // ヘッダーのスクロール効果
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
-            } else {
-                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = 'none';
-            }
-        });
-
-        // 商品カードのクリックイベント
-        document.querySelectorAll('.product-card').forEach(card => {
-            card.addEventListener('click', (e) => {
-                if (!e.target.classList.contains('product-link')) {
-                    const link = card.querySelector('.product-link:not(.disabled)');
-                    if (link) {
-                        link.click();
-                    }
-                }
-            });
-        });
-
-        // お問い合わせフォーム改善版
-        function sendEmail() {
-            const submitBtn = document.getElementById('submitBtn');
-            const formMessage = document.getElementById('formMessage');
-            const form = document.getElementById('contactForm');
-            
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const subject = document.getElementById('subject').value.trim() || 'お問い合わせ';
-            const message = document.getElementById('message').value.trim();
-            
-            // バリデーション
-            if (!name || !email || !message) {
-                alert('必須項目を入力してください。');
-                return;
-            }
-            
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(email)) {
-                alert('正しいメールアドレスを入力してください。');
-                return;
-            }
-            
-            // ボタンを無効化
-            submitBtn.disabled = true;
-            submitBtn.textContent = '送信中...';
-            
-            // メール本文を作成
-            const emailBody = `お名前: ${name}%0D%0A` +
-                            `メールアドレス: ${email}%0D%0A` +
-                            `件名: ${subject}%0D%0A%0D%0A` +
-                            `お問い合わせ内容:%0D%0A${message}`;
-            
-            // メールソフトを開く
-            window.location.href = `mailto:info@303furniture.net?subject=【303】${subject}&body=${emailBody}`;
-            
-            // 送信完了処理
-            setTimeout(() => {
-                // フォームをクリア
-                form.reset();
-                
-                // 成功メッセージを表示
-                formMessage.classList.add('show');
-                
-                // ボタンを元に戻す
-                submitBtn.disabled = false;
-                submitBtn.textContent = '送信する';
-                
-                // 3秒後にメッセージを非表示
-                setTimeout(() => {
-                    formMessage.classList.remove('show');
-                }, 3000);
-            }, 1000);
-        }
-
-        // 画像の遅延読み込み
-        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-        
-        if ('IntersectionObserver' in window) {
-            const imageObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const image = entry.target;
-                        image.classList.add('loaded');
-                        observer.unobserve(image);
-                    }
-                });
-            });
-            
-            lazyImages.forEach(image => {
-                imageObserver.observe(image);
-            });
-        }
-
-        // ページ読み込み完了時の処理
-        window.addEventListener('load', () => {
-            document.body.style.opacity = '1';
-            
-            // 初期状態のlazyイメージを表示
-            lazyImages.forEach(image => {
-                if (image.complete) {
-                    image.classList.add('loaded');
-                }
-            });
-        });
-        
-        // 初期状態でbodyを非表示に
-        document.body.style.opacity = '0';
-        document.body.style.transition = 'opacity 0.5s ease';
-    </script>
-
-    <!-- Google Analytics（準備）-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        // gtag('config', 'GA_MEASUREMENT_ID'); // 実際のIDに置き換えて有効化
-    </script>
-</body>
-</html>
