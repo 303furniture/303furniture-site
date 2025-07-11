@@ -13,7 +13,7 @@
     <meta property="og:title" content="303｜家具・空間提案">
     <meta property="og:description" content="303の家具と空間提案。オーダー家具、現場造作、宿泊施設・店舗の空間レイアウトまで。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://303product.github.io/303product-site/furniture.html">
+    <meta property="og:url" content="https://303product.github.io/303product-site/pages/furniture.html">
     <meta property="og:image" content="https://303product.github.io/303product-site/assets/images/top.jpg">
     <meta property="og:site_name" content="303">
     <meta property="og:locale" content="ja_JP">
@@ -214,7 +214,7 @@
             align-items: center;
             justify-content: center;
             background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
-                        url('assets/images/top.jpg');
+                        url('../assets/images/furniture_hero.jpg');
             background-size: cover;
             background-position: center 60%;
             text-align: center;
@@ -404,11 +404,11 @@
         }
         
         .example-image.table {
-            background-image: url('assets/images/L1005168.jpg');
+            background-image: url('../assets/images/L1005168.jpg');
         }
         
         .example-image.shelf {
-            background-image: url('assets/images/IMG_3008.jpg');
+            background-image: url('../assets/images/IMG_3008.jpg');
         }
         
         .example-content {
@@ -627,16 +627,6 @@
                 grid-template-columns: 1fr;
             }
         }
-        
-        /* Lazy loading対応 */
-        img[loading="lazy"] {
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        
-        img[loading="lazy"].loaded {
-            opacity: 1;
-        }
     </style>
 </head>
 <body>
@@ -644,24 +634,22 @@
     <header>
         <nav>
             <div class="nav-logo">
-                <a href="index.html"><img src="assets/images/logo.png" alt="303 ロゴ" class="logo-img" loading="lazy"></a>
+                <a href="../index.html"><img src="../assets/images/logo.png" alt="303 ロゴ" class="logo-img"></a>
             </div>
             <div class="nav-center">
                 <ul class="nav-links">
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="furniture.html">Furniture</a></li>
-                    <li><a href="https://303furniture.thebase.in" target="_blank">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#concept">About</a></li>
+                    <li><a href="../product.html">Product</a></li>
+                    <li><a href="mailto:info@303furniture.net">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-right">
                 <div class="nav-icons">
                     <a href="https://www.instagram.com/303_product_2019/" target="_blank" class="nav-icon" aria-label="Instagram">
-                        <img src="assets/images/instagram_logo.png" alt="Instagram" loading="lazy">
+                        <img src="../assets/images/instagram_logo.png" alt="Instagram">
                     </a>
                     <a href="https://303furniture.thebase.in" target="_blank" class="nav-icon" aria-label="オンラインショップ">
-                        <img src="assets/images/shopping_cart.png" alt="Shop" loading="lazy">
+                        <img src="../assets/images/shopping-cart.png" alt="Shop">
                     </a>
                 </div>
                 <div class="hamburger" aria-label="メニュー">
@@ -675,11 +663,9 @@
         <!-- モバイルメニュー -->
         <div class="mobile-menu">
             <ul>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="furniture.html">Furniture</a></li>
-                <li><a href="https://303furniture.thebase.in" target="_blank">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#concept">About</a></li>
+                <li><a href="../product.html">Product</a></li>
+                <li><a href="mailto:info@303furniture.net">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -688,16 +674,16 @@
     <section class="hero">
         <div class="hero-content">
             <h1>木と石と、暮らしのかたち</h1>
-            <p>303の家具と空間提案</p>
+            <p>303（サンマルサン）｜家具と空間提案</p>
         </div>
     </section>
 
     <!-- 家具コンセプト紹介セクション -->
-    <section class="concept-section">
+    <section id="concept" class="concept-section">
         <div class="concept-intro">
             <h2>自然素材と手仕事で築く空間</h2>
             <p>
-                303の家具づくりは、素材との対話から始まります。<br>
+                303（サンマルサン）の家具づくりは、素材との対話から始まります。<br>
                 大谷石や無垢材が持つ本来の美しさを活かし、<br>
                 お客様の暮らしに調和する家具と空間をご提案します。
             </p>
@@ -749,30 +735,6 @@
         </div>
     </section>
 
-    <!-- 納品事例セクション -->
-    <section class="examples-section">
-        <h2>納品事例</h2>
-        <p class="section-subtitle">これまでの制作実績をご紹介</p>
-        
-        <div class="examples-grid">
-            <div class="example-card">
-                <div class="example-image table"></div>
-                <div class="example-content">
-                    <h4>大谷石ダイニングテーブル</h4>
-                    <p>栃木県産の大谷石を天板に使用したダイニングテーブル。石の持つ独特の質感と無垢材の脚部が調和した、存在感のある一品です。</p>
-                </div>
-            </div>
-            
-            <div class="example-card">
-                <div class="example-image shelf"></div>
-                <div class="example-content">
-                    <h4>無垢材ブックシェルフ</h4>
-                    <p>厚みのある無垢材を使用したオープンシェルフ。木の温もりを感じられる仕上がりで、長年の使用にも耐える堅牢な構造です。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- お問い合わせ誘導セクション -->
     <section class="contact-cta">
         <h2>家具・空間提案のご相談</h2>
@@ -781,13 +743,13 @@
             お客様のご要望をお聞かせください。<br>
             お見積もりやご相談は無料で承っております。
         </p>
-        <a href="contact.html" class="btn-contact">お問い合わせはこちら</a>
+        <a href="mailto:info@303furniture.net" class="btn-contact">お問い合わせはこちら</a>
     </section>
 
     <!-- フッター -->
     <footer>
         <div class="footer-content">
-            <img src="assets/images/logo.png" alt="303 ロゴ" class="footer-logo-img" loading="lazy">
+            <img src="../assets/images/logo.png" alt="303 ロゴ" class="footer-logo-img">
             <div class="footer-contact">
                 <a href="mailto:info@303furniture.net">info@303furniture.net</a>
             </div>
@@ -842,41 +804,6 @@
                 header.style.boxShadow = 'none';
             }
         });
-
-        // 画像の遅延読み込み
-        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-        
-        if ('IntersectionObserver' in window) {
-            const imageObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const image = entry.target;
-                        image.classList.add('loaded');
-                        observer.unobserve(image);
-                    }
-                });
-            });
-            
-            lazyImages.forEach(image => {
-                imageObserver.observe(image);
-            });
-        }
-
-        // ページ読み込み完了時の処理
-        window.addEventListener('load', () => {
-            document.body.style.opacity = '1';
-            
-            // 初期状態のlazyイメージを表示
-            lazyImages.forEach(image => {
-                if (image.complete) {
-                    image.classList.add('loaded');
-                }
-            });
-        });
-        
-        // 初期状態でbodyを非表示に
-        document.body.style.opacity = '0';
-        document.body.style.transition = 'opacity 0.5s ease';
     </script>
 </body>
 </html>
