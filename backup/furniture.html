@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>303｜大谷石や無垢材を用いた暮らしの道具 | 素材の静けさを、暮らしのそばに。</title>
+    <title>303｜家具・空間提案 | 木と石と、暮らしのかたち。</title>
     
     <!-- SEO対策 -->
-    <meta name="description" content="303は、大谷石や無垢材などの自然素材を用いたインテリア小物・家具を制作・販売するブランドです。雑貨から家具まで、暮らしに寄り添う道具をお届けします。">
-    <meta name="keywords" content="303,サンマルサン,大谷石,無垢材,インテリア雑貨,家具,暮らしの道具,栃木,宇都宮,ハンドメイド,自然素材">
+    <meta name="description" content="303の家具と空間提案。オーダー家具、現場造作、宿泊施設・店舗の空間レイアウトまで。大谷石や無垢材を使った自然素材の家具づくりをご提案します。">
+    <meta name="keywords" content="303,サンマルサン,オーダー家具,造作家具,空間提案,大谷石,無垢材,家具,インテリアデザイン,自然素材">
     
     <!-- OGP設定 -->
-    <meta property="og:title" content="303｜大谷石や無垢材を用いた暮らしの道具">
-    <meta property="og:description" content="303は、大谷石や無垢材などの自然素材を用いたインテリア小物・家具を制作・販売するブランドです。">
+    <meta property="og:title" content="303｜家具・空間提案">
+    <meta property="og:description" content="303の家具と空間提案。オーダー家具、現場造作、宿泊施設・店舗の空間レイアウトまで。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://303product.github.io/303product-site/">
-    <meta property="og:image" content="https://303product.github.io/303product-site/assets/images/IMG_3350.JPG">
+    <meta property="og:url" content="https://303product.github.io/303product-site/pages/furniture.html">
+    <meta property="og:image" content="https://303product.github.io/303product-site/assets/images/top.jpg">
     <meta property="og:site_name" content="303">
     <meta property="og:locale" content="ja_JP">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="303｜大谷石や無垢材を用いた暮らしの道具">
-    <meta name="twitter:description" content="303は、大谷石や無垢材などの自然素材を用いたインテリア小物・家具を制作・販売するブランドです。">
-    <meta name="twitter:image" content="https://303product.github.io/303product-site/assets/images/IMG_3350.JPG">
+    <meta name="twitter:title" content="303｜家具・空間提案">
+    <meta name="twitter:description" content="303の家具と空間提案。オーダー家具、現場造作、宿泊施設・店舗の空間レイアウトまで。">
+    <meta name="twitter:image" content="https://303product.github.io/303product-site/assets/images/top.jpg">
     
     <!-- ファビコン -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -214,9 +214,9 @@
             align-items: center;
             justify-content: center;
             background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
-                        url('assets/images/IMG_3350.JPG');
+                        url('assets/images/furniture_hero.jpg');
             background-size: cover;
-            background-position: center 40%;
+            background-position: center 60%;
             text-align: center;
             position: relative;
             border-radius: 15px;
@@ -248,18 +248,42 @@
             font-weight: 300;
         }
         
-        /* カテゴリ分岐セクション */
-        .category-section {
-            padding: 6rem 5%;
-            text-align: center;
-            background: #fafaf8;
+        /* セクション共通 */
+        section {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         
-        .category-intro {
+        h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #444;
+            font-family: "Noto Serif JP", serif;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #555;
+            margin-bottom: 3rem;
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+        
+        /* 家具コンセプトセクション */
+        .concept-section {
+            background: #fafaf8;
+            padding: 6rem 5%;
+        }
+        
+        .concept-intro {
+            text-align: center;
             margin-bottom: 4rem;
         }
         
-        .category-intro h2 {
+        .concept-intro h2 {
             font-size: 2rem;
             font-weight: 400;
             color: #444;
@@ -267,7 +291,7 @@
             font-family: "Noto Serif JP", serif;
         }
         
-        .category-intro p {
+        .concept-intro p {
             font-size: 1rem;
             color: #555;
             max-width: 600px;
@@ -276,72 +300,163 @@
             font-weight: 300;
         }
         
-        .category-grid {
+        .concept-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 3rem;
-            max-width: 1000px;
-            margin: 0 auto;
+            margin-top: 3rem;
         }
         
-        .category-card {
+        .concept-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: center;
+        }
+        
+        .concept-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .concept-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            font-family: "Noto Serif JP", serif;
+            color: #444;
+        }
+        
+        .concept-card p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+        
+        /* 対応内容セクション */
+        .services-section {
+            padding: 6rem 5%;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-item {
+            background: #fafaf8;
+            border-radius: 10px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+        
+        .service-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            font-family: "Noto Serif JP", serif;
+            color: #444;
+        }
+        
+        .service-item p {
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+        
+        /* 納品事例セクション */
+        .examples-section {
+            background: #fafaf8;
+            padding: 6rem 5%;
+        }
+        
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .example-card {
             background: white;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            text-decoration: none;
-            color: inherit;
         }
         
-        .category-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        .example-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
         }
         
-        .category-image {
-            height: 280px;
+        .example-image {
+            height: 250px;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
         
-        .category-image.product {
-            background-image: url('assets/images/IMG_3350.JPG');
+        .example-image.table {
+            background-image: url('assets/images/L1005168.jpg');
         }
         
-        .category-image.furniture {
-            background-image: url('assets/images/top.jpg');
+        .example-image.shelf {
+            background-image: url('assets/images/IMG_3008.jpg');
         }
         
-        .category-content {
+        .example-content {
             padding: 2rem;
         }
         
-        .category-content h3 {
-            font-size: 1.4rem;
-            font-weight: 400;
+        .example-content h4 {
+            font-size: 1.2rem;
             margin-bottom: 1rem;
+            font-weight: 400;
             font-family: "Noto Serif JP", serif;
             color: #444;
         }
         
-        .category-content p {
+        .example-content p {
             color: #555;
-            font-size: 0.95rem;
-            line-height: 1.7;
+            font-size: 0.9rem;
+            line-height: 1.6;
             font-weight: 300;
-            margin-bottom: 1.5rem;
         }
         
-        .category-button {
+        /* お問い合わせ誘導セクション */
+        .contact-cta {
+            padding: 6rem 5%;
+            text-align: center;
+        }
+        
+        .contact-cta h2 {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-cta p {
+            font-size: 1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+        
+        .btn-contact {
             display: inline-block;
-            padding: 0.8rem 2rem;
+            padding: 1rem 3rem;
             background: white;
             color: #444;
             text-decoration: none;
             border-radius: 25px;
-            font-size: 0.9rem;
+            font-size: 1rem;
             font-weight: 300;
             transition: all 0.3s ease;
             letter-spacing: 0.1em;
@@ -349,7 +464,7 @@
             border: 1px solid #ddd;
         }
         
-        .category-button:hover {
+        .btn-contact:hover {
             background: #f8f8f8;
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
@@ -456,17 +571,33 @@
                 font-size: 0.9rem;
             }
             
-            .category-grid {
+            section {
+                padding: 3rem 5%;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .concept-section,
+            .services-section,
+            .examples-section,
+            .contact-cta {
+                padding: 4rem 5%;
+            }
+            
+            .concept-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
             
-            .category-section {
-                padding: 4rem 5%;
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             }
             
-            .category-intro h2 {
-                font-size: 1.5rem;
+            .examples-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
         }
         
@@ -491,6 +622,10 @@
             .hero-content {
                 white-space: normal;
             }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -503,7 +638,7 @@
             </div>
             <div class="nav-center">
                 <ul class="nav-links">
-                    <li><a href="#category">About</a></li>
+                    <li><a href="#concept">About</a></li>
                     <li><a href="#shop">Shop</a></li>
                     <li><a href="mailto:info@303furniture.net">Contact</a></li>
                 </ul>
@@ -528,7 +663,7 @@
         <!-- モバイルメニュー -->
         <div class="mobile-menu">
             <ul>
-                <li><a href="#category">About</a></li>
+                <li><a href="#concept">About</a></li>
                 <li><a href="#shop">Shop</a></li>
                 <li><a href="mailto:info@303furniture.net">Contact</a></li>
             </ul>
@@ -538,53 +673,84 @@
     <!-- ヒーローセクション -->
     <section class="hero">
         <div class="hero-content">
-            <h1>素材の静けさを暮らしのそばに</h1>
-            <p>303｜大谷石や無垢材を用いた暮らしの道具</p>
+            <h1>木と石と、暮らしのかたち</h1>
+            <p>303（サンマルサン）｜家具と空間提案</p>
         </div>
     </section>
 
-    <!-- カテゴリ分岐セクション -->
-    <section id="category" class="category-section">
-        <div class="category-intro">
-            <h2>手にふれる道具から、暮らしを包む空間まで。</h2>
+    <!-- 家具コンセプト紹介セクション -->
+    <section id="concept" class="concept-section">
+        <div class="concept-intro">
+            <h2>自然素材と手仕事で築く空間</h2>
             <p>
-                素材の声を聴きながら、丁寧にかたちにしています。
+                303（サンマルサン）の家具づくりは、素材との対話から始まります。<br>
+                大谷石や無垢材が持つ本来の美しさを活かし、<br>
+                お客様の暮らしに調和する家具と空間をご提案します。
             </p>
         </div>
         
-        <div class="category-grid">
-            <a href="product.html" class="category-card">
-                <div class="category-image product"></div>
-                <div class="category-content">
-                    <h3>雑貨・インテリア小物</h3>
-                    <p>大谷石や無垢材を使った、毎日の暮らしに寄り添う小さな道具たち。コースターから花器まで、手にとって愛でる雑貨をご紹介します。</p>
-                    <span class="category-button">雑貨のご購入はこちら</span>
-                </div>
-            </a>
+        <div class="concept-grid">
+            <div class="concept-card">
+                <h3>素材と向き合う</h3>
+                <p>栃木県産の大谷石、厳選された無垢材。それぞれの素材が持つ個性と表情を大切にし、素材本来の美しさを引き出す家具づくりを心がけています。</p>
+            </div>
             
-            <a href="furniture.html" class="category-card">
-                <div class="category-image furniture"></div>
-                <div class="category-content">
-                    <h3>家具・空間提案</h3>
-                    <p>オーダー家具から現場造作、空間全体の提案まで。お客様の暮らしに合わせて、自然素材を活かした家具と空間をつくります。</p>
-                    <span class="category-button">家具・空間提案のご相談はこちら</span>
-                </div>
-            </a>
+            <div class="concept-card">
+                <h3>暮らしに調和する家具</h3>
+                <p>お客様のライフスタイルや空間に合わせたオーダーメイドの家具をご提案。使う人の日常に自然に溶け込む、永く愛用いただける家具をお作りします。</p>
+            </div>
+            
+            <div class="concept-card">
+                <h3>自然素材と手仕事</h3>
+                <p>機械では表現できない、手仕事ならではの温かみと質感。職人の技術と自然素材の組み合わせで、唯一無二の家具をひとつひとつ丁寧に仕上げます。</p>
+            </div>
         </div>
+    </section>
+
+    <!-- 提案・対応内容セクション -->
+    <section class="services-section">
+        <h2>提案・対応内容</h2>
+        <p class="section-subtitle">お客様のご要望に合わせた幅広いサービスをご提供</p>
+        
+        <div class="services-grid">
+            <div class="service-item">
+                <h4>オーダー家具</h4>
+                <p>お客様のご要望に合わせたオリジナル家具の制作。テーブル、チェア、収納家具など、暮らしに合わせた設計・製作を行います。</p>
+            </div>
+            
+            <div class="service-item">
+                <h4>現場造作</h4>
+                <p>建築現場での造作家具や建具の制作。空間に合わせた寸法・デザインで、建物と一体化した家具をご提案します。</p>
+            </div>
+            
+            <div class="service-item">
+                <h4>宿泊施設・店舗の空間レイアウト</h4>
+                <p>ホテル、旅館、カフェ、レストランなどの空間デザイン。自然素材を活かした心地よい空間づくりをサポートします。</p>
+            </div>
+            
+            <div class="service-item">
+                <h4>図面作成・素材提案</h4>
+                <p>詳細な図面作成から素材選定まで。お客様のイメージを具体化し、最適な素材と仕上げ方法をご提案いたします。</p>
+            </div>
+        </div>
+    </section>
+
     <!-- ショップセクション -->
-    <section id="shop" class="shop-section" style="padding: 6rem 5%; text-align: center; background: #fafaf8;">
+    <section id="shop" class="shop-info" style="background: #fafaf8; padding: 6rem 5%; text-align: center;">
         <h2 style="font-size: 2rem; font-weight: 400; color: #444; margin-bottom: 1rem; font-family: 'Noto Serif JP', serif;">Shop</h2>
         <p style="text-align: center; color: #555; margin-bottom: 3rem; font-size: 0.9rem; font-weight: 300;">オンラインショップ</p>
         
         <div style="max-width: 600px; margin: 0 auto;">
             <p style="margin-bottom: 2rem; color: #555; line-height: 1.8; font-weight: 300; font-size: 1rem;">
-                303（サンマルサン）の商品は、<br>オンラインショップにてご購入いただけます。<br>大谷石や無垢材を使った暮らしの道具たちをぜひご覧ください。
+                303（サンマルサン）の商品は、オンラインショップにてご購入いただけます。大谷石や無垢材を使った暮らしの道具たちをぜひご覧ください。
             </p>
             <a href="https://303furniture.thebase.in" target="_blank" style="display: inline-block; padding: 0.9rem 2.5rem; background: white; color: #444; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 300; transition: all 0.3s ease; letter-spacing: 0.1em; font-family: 'Noto Serif JP', serif; border: 1px solid #ddd;" onmouseover="this.style.background='#f8f8f8'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)';" onmouseout="this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
                 ONLINE SHOP
             </a>
         </div>
     </section>
+
+    <!-- フッター -->
     <footer>
         <div class="footer-content">
             <img src="assets/images/logo.png" alt="303 ロゴ" class="footer-logo-img">
@@ -611,6 +777,23 @@
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
                 mobileMenu.classList.remove('active');
+            });
+        });
+
+        // スムーススクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
 
