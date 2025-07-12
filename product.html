@@ -3,7 +3,8 @@
             <div class="footer-contact">
                 <a href="mailto:info@303furniture.net">info@303furniture.net</a>
             </div>
-            <p class="copyright">&<!DOCTYPE html>
+            <p class="copyright">&copy; 2025 303（サンマルサン）. All rights reserved.</p>
+        </div><!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -128,14 +129,14 @@
         }
         
         .nav-icons {
-            display: flex;
+            display: flex !important;
             align-items: center;
             gap: 1rem;
         }
         
         .nav-icon {
             transition: opacity 0.3s ease;
-            display: block;
+            display: block !important;
         }
         
         .nav-icon:hover {
@@ -625,6 +626,10 @@
                 display: flex !important;
             }
             
+            .nav-icon {
+                display: block !important;
+            }
+            
             .hamburger {
                 display: none !important;
             }
@@ -643,6 +648,10 @@
             
             .nav-icons {
                 display: flex !important;
+            }
+            
+            .nav-icon {
+                display: block !important;
             }
             
             .hamburger {
@@ -708,6 +717,10 @@
                 gap: 0.8rem;
             }
             
+            .nav-icon {
+                display: block !important;
+            }
+            
             .hero-content h1 {
                 font-size: 1.5rem;
             }
@@ -718,6 +731,17 @@
             
             .hero {
                 margin: 60px 1% 0;
+            }
+        }
+        
+        /* 全画面サイズでアイコンを強制表示 */
+        @media (min-width: 1024px) {
+            .nav-icons {
+                display: flex !important;
+            }
+            
+            .nav-icon {
+                display: block !important;
             }
         }
         
