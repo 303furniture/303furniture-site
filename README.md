@@ -1,5 +1,2 @@
-# 303Product Site
-
-This is the GitHub Pages site for the **303Product** brand, showcasing handmade products using Oya stone and natural materials.
-
---- 
+# 303furniture-site
+303furniture GitHub Pages site
