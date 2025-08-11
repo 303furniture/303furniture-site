@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# メインページの優先度を高く設定
+Allow: /index.html
+Allow: /product.html
+Allow: /furniture.html
+
+# アセットファイルのクローリングを許可
+Allow: /assets/
+Allow: /assets/images/
+
+# バックアップファイルやシステムファイルを除外
+Disallow: /backup/
+Disallow: /.git/
+Disallow: /.DS_Store
+Disallow: /google117aeaa05ef4a5cc.html
+
+# サイトマップの場所を指定
+Sitemap: https://www.303furniture.net/sitemap.xml
+
+# クロール遅延（必要に応じて調整）
+Crawl-delay: 1
