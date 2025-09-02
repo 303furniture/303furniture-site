@@ -496,6 +496,81 @@
                 white-space: normal;
             }
         }
+        
+        /* 印刷用スタイル */
+        @media print {
+            /* 印刷時の基本設定 */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            /* ヒーローセクションの印刷対応 */
+            .hero {
+                background: #f5f5f5 !important;
+                height: auto !important;
+                min-height: 200px !important;
+                margin: 20px 0 !important;
+                border: 1px solid #ddd !important;
+                border-radius: 0 !important;
+            }
+            
+            /* ヒーロー背景画像を印刷用に調整 */
+            .hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #f5f5f5;
+                z-index: 1;
+            }
+            
+            /* ヒーローコンテンツを印刷用に調整 */
+            .hero-content {
+                position: relative;
+                z-index: 2;
+                color: #333 !important;
+                text-shadow: none !important;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 20px;
+                border-radius: 5px;
+            }
+            
+            /* カテゴリカードの印刷対応 */
+            .category-card {
+                break-inside: avoid;
+                page-break-inside: avoid;
+                box-shadow: none !important;
+                border: 1px solid #ddd !important;
+            }
+            
+            /* 画像の印刷対応 */
+            .category-image {
+                background-color: #f0f0f0 !important;
+                border: 1px solid #ddd !important;
+            }
+            
+            /* ヘッダーとフッターの印刷調整 */
+            header, footer {
+                background: white !important;
+                box-shadow: none !important;
+            }
+            
+            /* 印刷時の色調整 */
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            
+            /* リンクの印刷対応 */
+            a {
+                color: black !important;
+                text-decoration: underline !important;
+            }
+        }
     </style>
 </head>
 <body>
