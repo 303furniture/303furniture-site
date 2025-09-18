@@ -15,6 +15,9 @@ RewriteRule ^contact/?$ /contact.html [L,R=301]
 
 # 2.1) 旧PHP URLのリダイレクト
 RewriteRule ^index\.php$ / [L,R=301]
+RewriteRule ^index\.html$ / [L,R=301]
+RewriteRule ^product\.php$ /product.html [L,R=301]
+RewriteRule ^furniture\.php$ /furniture.html [L,R=301]
 
 # 4) セキュリティヘッダー
 <IfModule mod_headers.c>
