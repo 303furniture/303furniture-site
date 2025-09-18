@@ -12,6 +12,7 @@
     <meta name="description" content="303は、大谷石や無垢材などの自然素材を用いたインテリア小物・家具を制作・販売するブランドです。雑貨から家具まで、暮らしに寄り添う道具をお届けします。">
     <meta name="keywords" content="303,サンマルサン,大谷石,無垢材,インテリア雑貨,家具,暮らしの道具,栃木,宇都宮,ハンドメイド,自然素材">
     <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#ffffff">
     
     <!-- OGP設定 -->
     <meta property="og:title" content="303｜大谷石や無垢材を用いた暮らしの道具">
@@ -27,10 +28,34 @@
     <meta name="twitter:title" content="303｜大谷石や無垢材を用いた暮らしの道具">
     <meta name="twitter:description" content="303は、大谷石や無垢材などの自然素材を用いたインテリア小物・家具を制作・販売するブランドです。">
     <meta name="twitter:image" content="https://www.303furniture.net/assets/images/index_hero.jpg">
+    <meta property="og:image:alt" content="303 ブランドのキービジュアル">
     
     <!-- ファビコン（既存ロゴを利用） -->
     <link rel="icon" type="image/png" href="./assets/images/logo.png">
     <link rel="apple-touch-icon" href="./assets/images/logo.png">
+    
+    <!-- JSON-LD Structured Data: Organization + WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "303",
+      "url": "https://www.303furniture.net/",
+      "logo": "https://www.303furniture.net/assets/images/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/303_product_2019/",
+        "https://303furniture.thebase.in"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "303",
+      "url": "https://www.303furniture.net/"
+    }
+    </script>
     
     <!-- Google Fonts - Noto Serif JP (クールな明朝体) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -617,18 +642,18 @@
             <div class="nav-center">
                 <ul class="nav-links">
                     <li><a href="#category">About</a></li>
-                    <li><a href="./product.html">Product</a></li>
-                    <li><a href="./furniture.html">Furniture</a></li>
+                    <li><a href="/product.html">Product</a></li>
+                    <li><a href="/furniture.html">Furniture</a></li>
                     <li><a href="#shop">Shop</a></li>
                     <li><a href="mailto:info@303furniture.net">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-right">
                 <div class="nav-icons">
-                    <a href="https://www.instagram.com/303_product_2019/" target="_blank" class="nav-icon" aria-label="Instagram">
+                    <a href="https://www.instagram.com/303_product_2019/" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Instagram">
                         <img src="./assets/images/instagram_logo.png" alt="Instagram" width="20" height="20" loading="lazy" decoding="async">
                     </a>
-                    <a href="https://303furniture.thebase.in" target="_blank" class="nav-icon" aria-label="オンラインショップ">
+                    <a href="https://303furniture.thebase.in" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="オンラインショップ">
                         <img src="./assets/images/shopping_cart.png" alt="Shop" width="20" height="20" loading="lazy" decoding="async">
                     </a>
                 </div>
@@ -644,8 +669,8 @@
         <div class="mobile-menu">
             <ul>
                 <li><a href="#category">About</a></li>
-                <li><a href="./product.html">Product</a></li>
-                <li><a href="./furniture.html">Furniture</a></li>
+                <li><a href="/product.html">Product</a></li>
+                <li><a href="/furniture.html">Furniture</a></li>
                 <li><a href="#shop">Shop</a></li>
                 <li><a href="mailto:info@303furniture.net">Contact</a></li>
             </ul>
@@ -669,7 +694,7 @@
         </div>
         
         <div class="category-grid">
-            <a href="./product.html" class="category-card">
+            <a href="/product.html" class="category-card">
                 <div class="category-image product"></div>
                 <div class="category-content">
                     <h3>雑貨・インテリア小物</h3>
@@ -678,7 +703,7 @@
                 </div>
             </a>
             
-            <a href="./furniture.html" class="category-card">
+            <a href="/furniture.html" class="category-card">
                 <div class="category-image furniture"></div>
                 <div class="category-content">
                     <h3>家具・空間提案</h3>
@@ -698,7 +723,7 @@
             <p style="margin-bottom: 2rem; color: #555; line-height: 1.8; font-weight: 300; font-size: 1rem;">
                 303（サンマルサン）の商品は、<br>オンラインショップにてご購入いただけます。<br>大谷石や無垢材を使った暮らしの道具たちをぜひご覧ください。
             </p>
-            <a href="https://303furniture.thebase.in" target="_blank" style="display: inline-block; padding: 0.9rem 2.5rem; background: white; color: #444; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 300; transition: all 0.3s ease; letter-spacing: 0.1em; font-family: 'Noto Serif JP', serif; border: 1px solid #ddd;" onmouseover="this.style.background='#f8f8f8'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)';" onmouseout="this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+            <a href="https://303furniture.thebase.in" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.9rem 2.5rem; background: white; color: #444; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 300; transition: all 0.3s ease; letter-spacing: 0.1em; font-family: 'Noto Serif JP', serif; border: 1px solid #ddd;" onmouseover="this.style.background='#f8f8f8'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)';" onmouseout="this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
                 ONLINE SHOP
             </a>
         </div>
