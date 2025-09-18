@@ -245,8 +245,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            /* JPEG fallback */
             background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
                         url('./assets/images/index_hero.jpg');
+            /* Prefer WebP where supported */
+            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), image-set(
+                url('./assets/images/index_hero.webp') type('image/webp') 1x,
+                url('./assets/images/index_hero.jpg') type('image/jpeg') 1x
+            );
             background-size: cover;
             background-position: center 40%;
             text-align: center;
@@ -340,10 +346,18 @@
         
         .category-image.product {
             background-image: url('./assets/images/IMG_3350.JPG');
+            background-image: image-set(
+                url('./assets/images/IMG_3350.webp') type('image/webp') 1x,
+                url('./assets/images/IMG_3350.JPG') type('image/jpeg') 1x
+            );
         }
         
         .category-image.furniture {
             background-image: url('./assets/images/furniture_hero.jpg');
+            background-image: image-set(
+                url('./assets/images/furniture_hero.webp') type('image/webp') 1x,
+                url('./assets/images/furniture_hero.jpg') type('image/jpeg') 1x
+            );
         }
         
         .category-content {

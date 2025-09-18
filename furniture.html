@@ -433,10 +433,18 @@
         
         .example-image.table {
             background-image: url('./assets/images/L1005168.jpg');
+            background-image: image-set(
+                url('./assets/images/L1005168.webp') type('image/webp') 1x,
+                url('./assets/images/L1005168.jpg') type('image/jpeg') 1x
+            );
         }
         
         .example-image.shelf {
             background-image: url('./assets/images/IMG_3008.jpg');
+            background-image: image-set(
+                url('./assets/images/IMG_3008.webp') type('image/webp') 1x,
+                url('./assets/images/IMG_3008.jpg') type('image/jpeg') 1x
+            );
         }
         
         .example-content {

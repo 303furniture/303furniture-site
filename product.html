@@ -367,6 +367,10 @@
         
         .brand-visual {
             background-image: url('./assets/images/top.jpg');
+            background-image: image-set(
+                url('./assets/images/top.webp') type('image/webp') 1x,
+                url('./assets/images/top.jpg') type('image/jpeg') 1x
+            );
             background-size: cover;
             background-position: center 60%;
             aspect-ratio: 1;
@@ -405,11 +409,19 @@
         
         .material-image.stone {
             background-image: url('./assets/images/L1005168.jpg');
+            background-image: image-set(
+                url('./assets/images/L1005168.webp') type('image/webp') 1x,
+                url('./assets/images/L1005168.jpg') type('image/jpeg') 1x
+            );
             background-position: center 60%;
         }
         
         .material-image.wood {
             background-image: url('./assets/images/IMG_3008.jpg');
+            background-image: image-set(
+                url('./assets/images/IMG_3008.webp') type('image/webp') 1x,
+                url('./assets/images/IMG_3008.jpg') type('image/jpeg') 1x
+            );
             background-position: center 40%;
         }
         
