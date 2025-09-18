@@ -13,6 +13,9 @@ RewriteRule ^contact/?$ /contact.html [L,R=301]
 # 3) 残骸URLの301リダイレクト（必要に応じて）
 # RewriteRule ^[Uu]ncategorized/?$ /news.html [L,R=301]
 
+# 2.1) 旧PHP URLのリダイレクト
+RewriteRule ^index\.php$ / [L,R=301]
+
 # 4) セキュリティヘッダー
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options nosniff
@@ -44,4 +47,3 @@ RewriteRule ^contact/?$ /contact.html [L,R=301]
     AddOutputFilterByType DEFLATE application/javascript
     AddOutputFilterByType DEFLATE application/x-javascript
 </IfModule>
-

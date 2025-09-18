@@ -5,6 +5,7 @@ User-agent: *
 Disallow: /.git/
 Disallow: /.DS_Store
 Disallow: /google117aeaa05ef4a5cc.html
+Disallow: /*.php$
 
 # サイトマップ
 Sitemap: https://www.303furniture.net/sitemap.xml
