@@ -56,6 +56,9 @@
     }
     </script>
     
+    <!-- Preload LCP hero image -->
+    <link rel="preload" as="image" href="/assets/images/furniture_hero.webp" type="image/webp">
+
     <!-- Google Fonts - Noto Serif JP (クールな明朝体) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -178,6 +181,8 @@
             cursor: pointer;
             gap: 4px;
             padding: 8px;
+            background: none;
+            border: none;
         }
         
         .hamburger span {
@@ -241,8 +246,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+            /* JPEG fallback */
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
                         url('./assets/images/furniture_hero.jpg');
+            /* Prefer WebP where supported */
+            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), image-set(
+                url('./assets/images/furniture_hero.webp') type('image/webp') 1x,
+                url('./assets/images/furniture_hero.jpg') type('image/jpeg') 1x
+            );
             background-size: cover;
             background-position: center 60%;
             text-align: center;
@@ -785,7 +796,9 @@
             </div>
             <div class="nav-center">
                 <ul class="nav-links">
-                    <li><a href="#concept">About</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/product.html">Product</a></li>
+                    <li><a href="/furniture.html">Furniture</a></li>
                     <li><a href="#shop">Shop</a></li>
                     <li><a href="mailto:info@303furniture.net">Contact</a></li>
                 </ul>
@@ -799,18 +812,20 @@
                         <img src="./assets/images/shopping_cart.png" alt="Shop" width="20" height="20" loading="lazy" decoding="async">
                     </a>
                 </div>
-                <div class="hamburger" aria-label="メニュー">
+                <button class="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </nav>
         
         <!-- モバイルメニュー -->
         <div class="mobile-menu">
             <ul>
-                <li><a href="#concept">About</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/product.html">Product</a></li>
+                <li><a href="/furniture.html">Furniture</a></li>
                 <li><a href="#shop">Shop</a></li>
                 <li><a href="mailto:info@303furniture.net">Contact</a></li>
             </ul>
@@ -891,7 +906,7 @@
             <p style="margin-bottom: 2rem; color: #555; line-height: 1.8; font-weight: 300; font-size: 1rem;">
                 303（サンマルサン）の商品は、<br>オンラインショップにてご購入いただけます。<br>大谷石や無垢材を使った暮らしの道具たちをぜひご覧ください。
             </p>
-            <a href="https://303furniture.thebase.in" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.9rem 2.5rem; background: white; color: #444; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 300; transition: all 0.3s ease; letter-spacing: 0.1em; font-family: 'Noto Serif JP', serif; border: 1px solid #ddd;" onmouseover="this.style.background='#f8f8f8'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)';" onmouseout="this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+            <a href="https://303furniture.thebase.in" target="_blank" rel="noopener noreferrer" class="btn-contact">
                 ONLINE SHOP
             </a>
         </div>
@@ -904,7 +919,7 @@
             <div class="footer-contact">
                 <a href="mailto:info@303furniture.net">info@303furniture.net</a>
             </div>
-            <p class="copyright">&copy; 2025 303（サンマルサン）. All rights reserved.</p>
+            <p class="copyright">&copy; 2026 303（サンマルサン）. All rights reserved.</p>
         </div>
     </footer>
 
@@ -915,8 +930,9 @@
         const mobileMenu = document.querySelector('.mobile-menu');
         
         hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
+            const isOpen = hamburger.classList.toggle('active');
             mobileMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', isOpen);
         });
 
         // モバイルメニューのリンククリック時にメニューを閉じる
@@ -924,6 +940,7 @@
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
                 mobileMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
         });
 

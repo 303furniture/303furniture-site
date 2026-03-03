@@ -184,6 +184,8 @@
             cursor: pointer;
             gap: 4px;
             padding: 8px;
+            background: none;
+            border: none;
         }
         
         .hamburger span {
@@ -1110,11 +1112,11 @@
                         <img src="./assets/images/shopping_cart.png" alt="Shop" width="20" height="20" loading="lazy" decoding="async">
                     </a>
                 </div>
-                <div class="hamburger" aria-label="メニュー">
+                <button class="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </nav>
         
@@ -1512,7 +1514,7 @@
                 商品についてのご質問やご要望など、<br>
                 お気軽にお問い合わせください。
             </p>
-            <a href="mailto:info@303furniture.net" style="display: inline-block; padding: 0.9rem 2.5rem; background: white; color: #444; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 300; transition: all 0.3s ease; letter-spacing: 0.1em; font-family: 'Noto Serif JP', serif; border: 1px solid #ddd;" onmouseover="this.style.background='#f8f8f8'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)';" onmouseout="this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+            <a href="mailto:info@303furniture.net" class="btn-shop-large">
                 お問い合わせはこちら
             </a>
         </div>
@@ -1525,7 +1527,7 @@
             <div class="footer-contact">
                 <a href="mailto:info@303furniture.net">info@303furniture.net</a>
             </div>
-            <p class="copyright">&copy; 2025 303（サンマルサン）. All rights reserved.</p>
+            <p class="copyright">&copy; 2026 303（サンマルサン）. All rights reserved.</p>
         </div>
     </footer>
 
@@ -1536,8 +1538,9 @@
         const mobileMenu = document.querySelector('.mobile-menu');
         
         hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
+            const isOpen = hamburger.classList.toggle('active');
             mobileMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', isOpen);
         });
 
         // モバイルメニューのリンククリック時にメニューを閉じる
@@ -1545,6 +1548,7 @@
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
                 mobileMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
         });
 
