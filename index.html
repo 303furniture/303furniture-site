@@ -9,7 +9,7 @@
     <link rel="canonical" href="https://www.303furniture.net/" />
     
     <!-- SEO対策 -->
-    <meta name="description" content="303は、大谷石や無垢材などの自然素材を用いたインテリア小物・家具を制作・販売するブランドです。雑貨から家具まで、暮らしに寄り添う道具をお届けします。">
+    <meta name="description" content="303は、大谷石や無垢材などの自然素材を用いたインテリア小物・家具を制作・販売するブランドです。雑貨から家具まで、暮らしに寄り添う上質な道具をお届けします。">
     <meta name="keywords" content="303,サンマルサン,大谷石,無垢材,インテリア雑貨,家具,暮らしの道具,栃木,宇都宮,ハンドメイド,自然素材">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#ffffff">
@@ -30,42 +30,12 @@
     <meta name="twitter:image" content="https://www.303furniture.net/assets/images/index_hero.jpg">
     <meta property="og:image:alt" content="303 ブランドのキービジュアル">
     
-    <!-- ファビコン（既存ロゴを利用） -->
+    <!-- ファビコン -->
     <link rel="icon" type="image/png" href="./assets/images/logo.png">
     <link rel="apple-touch-icon" href="./assets/images/logo.png">
     
     <!-- Preload LCP hero image -->
     <link rel="preload" as="image" href="/assets/images/index_hero.jpg">
-    
-    <!-- JSON-LD Structured Data: Organization + WebSite -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "303",
-      "url": "https://www.303furniture.net/",
-      "logo": "https://www.303furniture.net/assets/images/logo.png",
-      "sameAs": [
-        "https://www.instagram.com/303product/",
-        "https://303furniture.thebase.in"
-      ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "303",
-      "url": "https://www.303furniture.net/"
-    }
-    </script>
-    
-    <!-- Google Fonts - Noto Serif JP (クールな明朝体) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./assets/css/style.css">
     
     <!-- JSON-LD 構造化データ -->
     <script type="application/ld+json">
@@ -78,7 +48,8 @@
           "url": "https://www.303furniture.net/",
           "logo": "https://www.303furniture.net/assets/images/logo.png",
           "sameAs": [
-            "https://www.instagram.com/303product/"
+            "https://www.instagram.com/303product/",
+            "https://303furniture.thebase.in"
           ],
           "contactPoint": [{
             "@type": "ContactPoint",
@@ -100,21 +71,28 @@
       ]
     }
     </script>
+    
+    <!-- Google Fonts - Noto Serif JP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <!-- ヘッダー -->
     <header>
         <nav>
             <div class="nav-logo">
-                <a href="/"><img src="./assets/images/logo.png" alt="303 ロゴ" class="logo-img" height="52" decoding="async"></a>
+                <a href="/"><img src="./assets/images/logo.png" alt="303 ロゴ" class="logo-img" height="42" decoding="async"></a>
             </div>
             <div class="nav-center">
                 <ul class="nav-links">
-                    <li><a href="#category">About</a></li>
-                    <li><a href="/product.html">Product</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/product.html">Products</a></li>
                     <li><a href="/furniture.html">Furniture</a></li>
                     <li><a href="#shop">Shop</a></li>
-                    <li><a href="mailto:info@303furniture.net">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-right">
@@ -137,74 +115,116 @@
         <!-- モバイルメニュー -->
         <div class="mobile-menu">
             <ul>
-                <li><a href="#category">About</a></li>
-                <li><a href="/product.html">Product</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="/product.html">Products</a></li>
                 <li><a href="/furniture.html">Furniture</a></li>
                 <li><a href="#shop">Shop</a></li>
-                <li><a href="mailto:info@303furniture.net">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
 
     <!-- ヒーローセクション -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>素材の静けさを暮らしのそばに</h1>
+        <div class="hero-content fade-in">
+            <h1>素材の静けさを、<br class="sp-only">暮らしのそばに。</h1>
+            <p class="hero-lead">大谷石や無垢材を用いた、上質な暮らしの道具</p>
+        </div>
+        <div class="scroll-indicator fade-in" style="animation-delay: 1s;">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- カテゴリ分岐セクション -->
-    <section id="category" class="category-section">
-        <div class="category-intro">
-            <h2>手にふれる道具から、暮らしを包む空間まで。</h2>
-            <p>
-                素材の声を聴きながら、丁寧にかたちにしています。
-            </p>
+    <!-- About コンセプトセクション -->
+    <section id="about" class="about-section">
+        <div class="container fade-in-up">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p>
+                    303（サンマルサン）は、無垢材や大谷石、真鍮など、<br class="pc-only">
+                    時とともに表情を変え、美しさを増す自然素材を活かした<br class="pc-only">
+                    シンプルで静かなプロダクトを届けるブランドです。
+                </p>
+                <p>
+                    家具づくりの思想を大切にしながら、<br class="pc-only">
+                    手元で愛でる小さな雑貨から、空間を包み込むオーダー家具まで。<br class="pc-only">
+                    あなたの日常に静かに寄り添う、上質な道具を形にします。
+                </p>
+            </div>
         </div>
-        
-        <div class="category-grid">
-            <a href="/product.html" class="category-card">
-                <div class="category-image product"></div>
-                <div class="category-content">
-                    <h3>雑貨・インテリア小物</h3>
-                    <p>大谷石や無垢材を使った、毎日の暮らしに寄り添う小さな道具たち。コースターから花器まで、手にとって愛でる雑貨をご紹介します。</p>
-                    <span class="category-button">雑貨のご購入はこちら</span>
-                </div>
-            </a>
+    </section>
+
+    <!-- プロダクト・家具セクション -->
+    <section id="category" class="category-section section-bg">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Products & Services</h2>
             
-            <a href="/furniture.html" class="category-card">
-                <div class="category-image furniture"></div>
-                <div class="category-content">
-                    <h3>家具・空間提案</h3>
-                    <p>オーダー家具から現場造作、空間全体の提案まで。お客様の暮らしに合わせて、自然素材を活かした家具と空間をつくります。</p>
-                    <span class="category-button">家具・空間提案のご相談はこちら</span>
-                </div>
-            </a>
+            <div class="category-grid">
+                <!-- 雑貨 -->
+                <a href="/product.html" class="category-card fade-in-up">
+                    <div class="category-image product"></div>
+                    <div class="category-content">
+                        <h3>雑貨・インテリア小物</h3>
+                        <p>無垢材や大谷石を使った、毎日の暮らしに寄り添う小さな道具たち。コースターや花器など、手にとって愛でる雑貨をご紹介します。</p>
+                        <span class="category-link">View Products <span class="arrow">→</span></span>
+                    </div>
+                </a>
+                
+                <!-- 家具 -->
+                <a href="/furniture.html" class="category-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="category-image furniture"></div>
+                    <div class="category-content">
+                        <h3>家具・空間提案</h3>
+                        <p>オーダー家具から現場造作、空間全体の提案まで。お客様の暮らしに合わせて、自然素材を魅力を活かした家具と空間をご提案します。</p>
+                        <span class="category-link">View Furniture <span class="arrow">→</span></span>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- ショップセクション -->
-    <section id="shop" class="shop-section" style="padding: 6rem 5%; text-align: center; background: #fafaf8;">
-        <h2 style="font-size: 2rem; font-weight: 400; color: #444; margin-bottom: 1rem; font-family: 'Noto Serif JP', serif;">Shop</h2>
-        <p style="text-align: center; color: #555; margin-bottom: 3rem; font-size: 0.9rem; font-weight: 300;">オンラインショップ</p>
-        
-        <div style="max-width: 600px; margin: 0 auto;">
-            <p style="margin-bottom: 2rem; color: #555; line-height: 1.8; font-weight: 300; font-size: 1rem;">
-                303（サンマルサン）の商品は、<br>オンラインショップにてご購入いただけます。<br>大谷石や無垢材を使った暮らしの道具たちをぜひご覧ください。
+    <!-- オンラインショップ導線 -->
+    <section id="shop" class="shop-section">
+        <div class="container fade-in-up">
+            <h2 class="section-title">Online Shop</h2>
+            <p class="section-desc">
+                日々の暮らしを彩るインテリア小物や雑貨類は、<br class="pc-only">
+                オンラインストアよりご購入いただけます。<br class="pc-only">
+                素材の経年変化を楽しみながら、長く使える道具をお探しください。
             </p>
-            <a href="https://303furniture.thebase.in" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.9rem 2.5rem; background: white; color: #444; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 300; transition: all 0.3s ease; letter-spacing: 0.1em; font-family: 'Noto Serif JP', serif; border: 1px solid #ddd;" onmouseover="this.style.background='#f8f8f8'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)';" onmouseout="this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                ONLINE SHOP
-            </a>
+            <div class="btn-group">
+                <a href="https://303furniture.thebase.in" target="_blank" rel="noopener noreferrer" class="btn btn-primary">オンラインストアを見る</a>
+            </div>
         </div>
     </section>
 
+    <!-- Contact 導線 -->
+    <section id="contact" class="contact-section section-bg">
+        <div class="container fade-in-up">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-desc">
+                商品に関するご質問や、オーダーメイド家具の製作、<br class="pc-only">
+                空間デザインに関するご相談など、お気軽にお問い合わせください。
+            </p>
+            <div class="btn-group">
+                <a href="mailto:info@303furniture.net" class="btn btn-secondary">メールでお問い合わせ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
     <footer>
         <div class="footer-content">
-            <img src="./assets/images/logo.png" alt="303 ロゴ" class="footer-logo-img" height="52" loading="lazy" decoding="async">
+            <img src="./assets/images/logo.png" alt="303 ロゴ" class="footer-logo-img" height="42" loading="lazy" decoding="async">
             <div class="footer-contact">
                 <a href="mailto:info@303furniture.net">info@303furniture.net</a>
             </div>
-            <p class="copyright">&copy; 2025-2026 303（サンマルサン）. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/303product/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                <a href="https://303furniture.thebase.in" target="_blank" rel="noopener noreferrer" aria-label="Online Shop">Online Shop</a>
+            </div>
+            <p class="copyright">&copy; 2025-2026 303 product. All rights reserved.</p>
         </div>
     </footer>
 
