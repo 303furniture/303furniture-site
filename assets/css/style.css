@@ -151,13 +151,13 @@ nav {
 }
 
 .hero.product::before {
-    background-image: url('../../assets/images/IMG_3350.JPG');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../../assets/images/IMG_3350.JPG');
     background-position: center 40%;
     filter: none;
 }
 
 .hero.furniture::before {
-    background-image: url('../../assets/images/furniture_hero.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../../assets/images/furniture_hero.jpg');
     background-position: center 60%;
     filter: none;
 }
