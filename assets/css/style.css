@@ -298,7 +298,7 @@ footer {
     nav { grid-template-columns: auto 1fr auto; height: 65px; }
     .nav-links { display: none; }
     .hamburger { display: flex; }
-    .category-card { height: 160px; }
+    /* Removed fixed height to prevent overlapping elements */
     
     .hero {
         width: 96%;
