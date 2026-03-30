@@ -123,8 +123,10 @@ nav {
 
 /* Hero Section */
 .hero {
-    height: 75vh;
-    margin: 85px 3% 0;
+    aspect-ratio: 1;
+    width: 94%;
+    max-width: 80vh;
+    margin: 85px auto 0;
     border-radius: 15px;
     overflow: hidden;
     position: relative;
@@ -336,8 +338,8 @@ footer {
     .category-card { height: 160px; }
     
     .hero {
-        height: 60vh;
-        margin: 60px 2% 0;
+        width: 96%;
+        margin: 60px auto 0;
         border-radius: 10px;
     }
     .hero::before { background-attachment: scroll; } /* Disable parallax on mobile */
