@@ -82,10 +82,10 @@
         }
         
         .brand-visual {
-            background-image: url('./assets/images/top.jpg');
+            background-image: url('../../assets/images/top.jpg');
             background-image: image-set(
-                url('./assets/images/top.webp') type('image/webp') 1x,
-                url('./assets/images/top.jpg') type('image/jpeg') 1x
+                url('../../assets/images/top.webp') type('image/webp') 1x,
+                url('../../assets/images/top.jpg') type('image/jpeg') 1x
             );
             background-size: cover;
             background-position: center 60%;
@@ -124,19 +124,19 @@
         }
         
         .material-image.stone {
-            background-image: url('./assets/images/L1005168.jpg');
+            background-image: url('../../assets/images/L1005168.jpg');
             background-image: image-set(
-                url('./assets/images/L1005168.webp') type('image/webp') 1x,
-                url('./assets/images/L1005168.jpg') type('image/jpeg') 1x
+                url('../../assets/images/L1005168.webp') type('image/webp') 1x,
+                url('../../assets/images/L1005168.jpg') type('image/jpeg') 1x
             );
             background-position: center 60%;
         }
         
         .material-image.wood {
-            background-image: url('./assets/images/IMG_3008.jpg');
+            background-image: url('../../assets/images/IMG_3008.jpg');
             background-image: image-set(
-                url('./assets/images/IMG_3008.webp') type('image/webp') 1x,
-                url('./assets/images/IMG_3008.jpg') type('image/jpeg') 1x
+                url('../../assets/images/IMG_3008.webp') type('image/webp') 1x,
+                url('../../assets/images/IMG_3008.jpg') type('image/jpeg') 1x
             );
             background-position: center 40%;
         }
@@ -329,114 +329,114 @@
         
         /* 商品画像の設定 */
         .product-image.coaster {
-            background-image: url('./assets/images/product_01.jpg');
+            background-image: url('../../assets/images/product_01.jpg');
             background-image: image-set(
-                url('./assets/images/product_01.webp') type('image/webp') 1x,
-                url('./assets/images/product_01.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_01.webp') type('image/webp') 1x,
+                url('../../assets/images/product_01.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.toothbrush-base {
-            background-image: url('./assets/images/product_02.jpg');
+            background-image: url('../../assets/images/product_02.jpg');
             background-image: image-set(
-                url('./assets/images/product_02.webp') type('image/webp') 1x,
-                url('./assets/images/product_02.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_02.webp') type('image/webp') 1x,
+                url('../../assets/images/product_02.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.umbrella-stand {
-            background-image: url('./assets/images/product_03.jpg');
+            background-image: url('../../assets/images/product_03.jpg');
             background-image: image-set(
-                url('./assets/images/product_03.webp') type('image/webp') 1x,
-                url('./assets/images/product_03.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_03.webp') type('image/webp') 1x,
+                url('../../assets/images/product_03.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.clock {
-            background-image: url('./assets/images/product_04.jpg');
+            background-image: url('../../assets/images/product_04.jpg');
             background-image: image-set(
-                url('./assets/images/product_04.webp') type('image/webp') 1x,
-                url('./assets/images/product_04.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_04.webp') type('image/webp') 1x,
+                url('../../assets/images/product_04.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.pot-holder-fish {
-            background-image: url('./assets/images/product_05.jpg');
+            background-image: url('../../assets/images/product_05.jpg');
             background-image: image-set(
-                url('./assets/images/product_05.webp') type('image/webp') 1x,
-                url('./assets/images/product_05.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_05.webp') type('image/webp') 1x,
+                url('../../assets/images/product_05.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.toothbrush-large {
-            background-image: url('./assets/images/product_06.jpg');
+            background-image: url('../../assets/images/product_06.jpg');
             background-image: image-set(
-                url('./assets/images/product_06.webp') type('image/webp') 1x,
-                url('./assets/images/product_06.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_06.webp') type('image/webp') 1x,
+                url('../../assets/images/product_06.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.toothbrush-round {
-            background-image: url('./assets/images/product_07.jpg');
+            background-image: url('../../assets/images/product_07.jpg');
             background-image: image-set(
-                url('./assets/images/product_07.webp') type('image/webp') 1x,
-                url('./assets/images/product_07.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_07.webp') type('image/webp') 1x,
+                url('../../assets/images/product_07.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.toothbrush-slant {
-            background-image: url('./assets/images/product_08.jpg');
+            background-image: url('../../assets/images/product_08.jpg');
             background-image: image-set(
-                url('./assets/images/product_08.webp') type('image/webp') 1x,
-                url('./assets/images/product_08.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_08.webp') type('image/webp') 1x,
+                url('../../assets/images/product_08.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.vase {
-            background-image: url('./assets/images/product_09.jpg');
+            background-image: url('../../assets/images/product_09.jpg');
             background-image: image-set(
-                url('./assets/images/product_09.webp') type('image/webp') 1x,
-                url('./assets/images/product_09.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_09.webp') type('image/webp') 1x,
+                url('../../assets/images/product_09.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.pen-tray {
-            background-image: url('./assets/images/product_10.jpg');
+            background-image: url('../../assets/images/product_10.jpg');
             background-image: image-set(
-                url('./assets/images/product_10.webp') type('image/webp') 1x,
-                url('./assets/images/product_10.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_10.webp') type('image/webp') 1x,
+                url('../../assets/images/product_10.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.tape-cutter {
-            background-image: url('./assets/images/product_11.jpg');
+            background-image: url('../../assets/images/product_11.jpg');
             background-image: image-set(
-                url('./assets/images/product_11.webp') type('image/webp') 1x,
-                url('./assets/images/product_11.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_11.webp') type('image/webp') 1x,
+                url('../../assets/images/product_11.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.tapir-wax {
-            background-image: url('./assets/images/product_21.jpg');
+            background-image: url('../../assets/images/product_21.jpg');
             background-image: image-set(
-                url('./assets/images/product_21.webp') type('image/webp') 1x,
-                url('./assets/images/product_21.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_21.webp') type('image/webp') 1x,
+                url('../../assets/images/product_21.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.tapir-polish {
-            background-image: url('./assets/images/product_22.jpg');
+            background-image: url('../../assets/images/product_22.jpg');
             background-image: image-set(
-                url('./assets/images/product_22.webp') type('image/webp') 1x,
-                url('./assets/images/product_22.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_22.webp') type('image/webp') 1x,
+                url('../../assets/images/product_22.jpg') type('image/jpeg') 1x
             );
         }
         
         .product-image.tapir-cloth {
-            background-image: url('./assets/images/product_23.jpg');
+            background-image: url('../../assets/images/product_23.jpg');
             background-image: image-set(
-                url('./assets/images/product_23.webp') type('image/webp') 1x,
-                url('./assets/images/product_23.jpg') type('image/jpeg') 1x
+                url('../../assets/images/product_23.webp') type('image/webp') 1x,
+                url('../../assets/images/product_23.jpg') type('image/jpeg') 1x
             );
         }
         

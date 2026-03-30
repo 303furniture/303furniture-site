@@ -130,10 +130,10 @@
         }
         
         .example-image.table {
-            background-image: url('./assets/images/L1005168.jpg');
+            background-image: url('../../assets/images/L1005168.jpg');
             background-image: image-set(
-                url('./assets/images/L1005168.webp') type('image/webp') 1x,
-                url('./assets/images/L1005168.jpg') type('image/jpeg') 1x
+                url('../../assets/images/L1005168.webp') type('image/webp') 1x,
+                url('../../assets/images/L1005168.jpg') type('image/jpeg') 1x
             );
         }
         
