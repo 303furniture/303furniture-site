@@ -137,13 +137,24 @@ nav {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: url('../../assets/images/index_hero.jpg');
+    background-image: url('../../assets/images/index_hero.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     filter: brightness(1.3) contrast(1.05); /* 少し強めに明るくする */
     z-index: -1;
 }
+
+.hero.product::before {
+    background-image: url('../../assets/images/IMG_3350.JPG');
+    background-position: center 40%;
+}
+
+.hero.furniture::before {
+    background-image: url('../../assets/images/furniture_hero.jpg');
+    background-position: center 60%;
+}
+
 
 .hero-content { padding: 0 5%; }
 .hero-content h1 {
