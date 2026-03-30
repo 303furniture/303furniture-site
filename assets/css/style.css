@@ -124,6 +124,9 @@ nav {
 /* Hero Section */
 .hero {
     height: 75vh;
+    margin: 85px 3% 0;
+    border-radius: 15px;
+    overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
@@ -330,8 +333,13 @@ footer {
     nav { grid-template-columns: auto 1fr auto; height: 65px; }
     .nav-links { display: none; }
     .hamburger { display: flex; }
-    .logo-img { height: 34px; }
+    .category-card { height: 160px; }
     
+    .hero {
+        height: 60vh;
+        margin: 60px 2% 0;
+        border-radius: 10px;
+    }
     .hero::before { background-attachment: scroll; } /* Disable parallax on mobile */
     .hero-content h1 { font-size: 1.5rem; letter-spacing: 0.1em; margin-bottom: 1rem; }
     .hero-lead { font-size: 0.85rem; }
