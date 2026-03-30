@@ -253,8 +253,7 @@ nav {
     background-size: cover;
     background-position: center;
     margin-bottom: 2rem;
-    /* Soft border radius instead of harsh dropshadow */
-    border-radius: 2px;
+    border-radius: 15px;
 }
 .category-image.product { background-image: url('../../assets/images/IMG_3350.JPG'); }
 .category-image.furniture { background-image: url('../../assets/images/furniture_hero.jpg'); }
