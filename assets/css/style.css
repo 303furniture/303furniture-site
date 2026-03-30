@@ -125,7 +125,7 @@ nav {
 .hero {
     height: 100vh;
     position: relative;
-    background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.05)), url('../../assets/images/index_hero.jpg');
+    background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0)), url('../../assets/images/index_hero.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Parallax effect */
