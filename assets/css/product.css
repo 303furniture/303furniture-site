@@ -465,3 +465,35 @@
         padding: 2rem 5% 1rem;
     }
 }
+
+/* 家具CTAセクション */
+.furniture-cta {
+    background: #fafaf8;
+    padding: 4rem 5%;
+    text-align: center;
+    max-width: 100%;
+}
+
+.furniture-cta-desc {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* コンタクトセクション */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-intro {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}

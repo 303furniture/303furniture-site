@@ -30,9 +30,11 @@
     <meta name="twitter:image" content="https://www.303furniture.net/assets/images/top.jpg">
     <meta property="og:image:alt" content="303 家具・空間提案のキービジュアル">
     
-    <!-- ファビコン（既存ロゴを利用） -->
     <link rel="icon" type="image/png" href="./assets/images/logo.png">
     <link rel="apple-touch-icon" href="./assets/images/logo.png">
+    
+    <!-- Preload LCP hero image -->
+    <link rel="preload" as="image" href="/assets/images/furniture_hero.jpg">
     
     <!-- JSON-LD Structured Data: BreadcrumbList (Home > Furniture) -->
     <script type="application/ld+json">
@@ -75,7 +77,8 @@
           "url": "https://www.303furniture.net/",
           "logo": "https://www.303furniture.net/assets/images/logo.png",
           "sameAs": [
-            "https://www.instagram.com/303product/"
+            "https://www.instagram.com/303product/",
+            "https://303furniture.thebase.in"
           ],
           "contactPoint": [{
             "@type": "ContactPoint",
@@ -92,7 +95,16 @@
         {
           "@type": "WebPage",
           "url": "https://www.303furniture.net/furniture.html",
-          "name": "303｜家具・空間提案"
+          "name": "303｜家具・空間提案",
+          "description": "303の家具と空間提案。オーダー家具、現場造作、宿泊施設・店舗の空間レイアウトまで。大谷石や無垢材を使った自然素材の家具づくりをご提案します。"
+        },
+        {
+          "@type": "Service",
+          "name": "303 家具・空間提案サービス",
+          "provider": { "@type": "Organization", "name": "303" },
+          "serviceType": ["オーダー家具", "現場造作", "空間デザイン", "図面作成"],
+          "areaServed": "JP",
+          "availableLanguage": "ja"
         }
       ]
     }
@@ -152,7 +164,7 @@
     </section>
 
     <!-- 家具コンセプト紹介セクション -->
-    <section id="concept" class="concept-section" class="fade-in-up">
+    <section id="concept" class="concept-section fade-in-up">
         <div class="concept-intro">
             <h2>自然素材と手仕事で築く空間</h2>
             <p>
@@ -181,7 +193,7 @@
     </section>
 
     <!-- 提案・対応内容セクション -->
-    <section class="services-section" class="fade-in-up">
+    <section class="services-section fade-in-up">
         <h2>提案・対応内容</h2>
         <p class="section-subtitle">お客様のご要望に合わせた幅広いサービスをご提供</p>
         
@@ -209,15 +221,15 @@
     </section>
 
     <!-- ショップセクション -->
-    <section id="shop" class="shop-info" style="background: #fafaf8; padding: 6rem 5%; text-align: center;" class="fade-in-up">
-        <h2 style="font-size: 2rem; font-weight: 400; color: #444; margin-bottom: 1rem; font-family: 'Noto Serif JP', serif;">Shop</h2>
-        <p style="text-align: center; color: #555; margin-bottom: 3rem; font-size: 0.9rem; font-weight: 300;">オンラインショップ</p>
+    <section id="shop" class="shop-info fade-in-up">
+        <h2 class="section-title-furniture">Shop</h2>
+        <p class="section-subtitle">オンラインショップ</p>
         
-        <div style="max-width: 600px; margin: 0 auto;">
-            <p style="margin-bottom: 2rem; color: #555; line-height: 1.8; font-weight: 300; font-size: 1rem;">
+        <div class="shop-container">
+            <p class="shop-intro">
                 303（サンマルサン）の商品は、<br>オンラインショップにてご購入いただけます。<br>大谷石や無垢材を使った暮らしの道具たちをぜひご覧ください。
             </p>
-            <a href="https://303furniture.thebase.in" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.9rem 2.5rem; background: white; color: #444; text-decoration: none; border-radius: 25px; font-size: 0.9rem; font-weight: 300; transition: all 0.3s ease; letter-spacing: 0.1em; font-family: 'Noto Serif JP', serif; border: 1px solid #ddd;" onmouseover="this.style.background='#f8f8f8'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)';" onmouseout="this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+            <a href="https://303furniture.thebase.in" target="_blank" rel="noopener noreferrer" class="btn-shop-large">
                 ONLINE SHOP
             </a>
         </div>
@@ -236,6 +248,6 @@
 
     <!-- JavaScript -->
 
-    <script src="./assets/js/main.js?v=20260330_1"></script>
+    <script src="./assets/js/main.js?v=20260330_2"></script>
 </body>
 </html>

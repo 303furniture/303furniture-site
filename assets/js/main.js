@@ -15,7 +15,7 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
     });
 });
 
-// ヘッダーのスクロール効果
+// ヘッダーのスクロール効果（passive: true でパフォーマンス向上）
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
@@ -23,21 +23,21 @@ window.addEventListener('scroll', () => {
     } else {
         header.classList.remove('scrolled');
     }
-});
+}, { passive: true });
 
 // スクロール時のフェードインアニメーション
 const observerOptions = {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.15
+    rootMargin: '0px 0px -30px 0px',
+    threshold: 0.1
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
-            // 一度発火したら監視を解除する場合（解除しない場合はコメントアウトを外さない）
-            // observer.unobserve(entry.target);
+            // 一度表示されたら監視を解除（パフォーマンス向上）
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);

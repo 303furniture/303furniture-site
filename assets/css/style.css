@@ -18,6 +18,10 @@ body {
     font-weight: 300;
 }
 
+section {
+    scroll-margin-top: 90px;
+}
+
 /* Utilities */
 .sp-only { display: none; }
 .pc-only { display: inline-block; }

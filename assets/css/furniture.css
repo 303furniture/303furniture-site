@@ -138,10 +138,10 @@
         }
         
         .example-image.shelf {
-            background-image: url('./assets/images/IMG_3008.jpg');
+            background-image: url('../../assets/images/IMG_3008.jpg');
             background-image: image-set(
-                url('./assets/images/IMG_3008.webp') type('image/webp') 1x,
-                url('./assets/images/IMG_3008.jpg') type('image/jpeg') 1x
+                url('../../assets/images/IMG_3008.webp') type('image/webp') 1x,
+                url('../../assets/images/IMG_3008.jpg') type('image/jpeg') 1x
             );
         }
         
@@ -229,4 +229,62 @@
     .services-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Shop セクション（furniture.html用） */
+.shop-info {
+    background: #fafaf8;
+    padding: 6rem 5%;
+    text-align: center;
+}
+
+.section-title-furniture {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 1rem;
+    font-family: "Noto Serif JP", serif;
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 3rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.shop-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.shop-intro {
+    margin-bottom: 2rem;
+    color: #555;
+    line-height: 1.8;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.btn-shop-large {
+    display: inline-block;
+    padding: 0.9rem 2.5rem;
+    background: white;
+    color: #444;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    letter-spacing: 0.1em;
+    font-family: "Noto Serif JP", serif;
+    border: 1px solid #ddd;
+}
+
+.btn-shop-large:hover {
+    background: #f8f8f8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
