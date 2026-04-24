@@ -64,7 +64,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="./assets/css/style.css?v=20260330_5">
+    <link rel="stylesheet" href="./assets/css/style.css?v=20260424_1">
     <link rel="stylesheet" href="./assets/css/product.css?v=20260330_1">
     
     <!-- JSON-LD 構造化データ -->
@@ -457,15 +457,17 @@
         // 商品カードのクリックイベント
         document.querySelectorAll('.product-card').forEach(card => {
             card.addEventListener('click', (e) => {
-                if (!e.target.classList.contains('product-link')) {
-                    const link = card.querySelector('.product-link:not(.disabled)');
-                    if (link) {
-                        link.click();
-                    }
+                if (e.target.closest('.product-link')) {
+                    return;
+                }
+
+                const link = card.querySelector('.product-link:not(.disabled)');
+                if (link && link.href) {
+                    window.location.href = link.href;
                 }
             });
         });
     </script>
-    <script src="./assets/js/main.js?v=20260330_2"></script>
+    <script src="./assets/js/main.js?v=20260424_1"></script>
 </body>
 </html>

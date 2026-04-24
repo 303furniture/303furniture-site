@@ -349,4 +349,10 @@ footer {
     .category-image { height: 280px; }
     
     .btn { padding: 1rem 2rem; font-size: 0.8rem; }
+
+    .fade-in-up {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }
