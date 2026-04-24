@@ -184,8 +184,8 @@
         }
         
         .product-image {
-            height: 250px;
-            background-size: contain;
+            aspect-ratio: 1 / 1;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-color: #f8f6f2;
