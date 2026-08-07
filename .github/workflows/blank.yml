@@ -1,7 +1,0 @@
-name: Blank Workflow
-on: [push]
-jobs:
-  noop:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "This is a placeholder"
