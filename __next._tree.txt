@@ -2,9 +2,9 @@
 :HL["/images/logo.png","image"]
 :HL["/images/stone.jpg","image"]
 :HL["/images/wood.jpg","image"]
+:HL["/images/minomushi-cabinet.jpg","image"]
+:HL["/images/koushi-chair.jpg","image"]
 :HL["/images/coaster.jpg","image"]
-:HL["/images/toothbrush-base.jpg","image"]
-:HL["/images/umbrella.jpg","image"]
 :HL["/images/clock.jpg","image"]
 :HL["/images/hero.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"tDJFQNfMASY7HPk9Z2qhz"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"Cxj7hQmzfsGsWEYDu1IfE"}
