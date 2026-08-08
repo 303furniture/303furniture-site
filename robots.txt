@@ -1,12 +1,4 @@
 User-agent: *
-# デフォルトAllowのため明示Allowは不要
+Allow: /
 
-# システムファイルの除外
-Disallow: /.git/
-Disallow: /.DS_Store
-Disallow: /google117aeaa05ef4a5cc.html
-Disallow: /*.php$
-Allow: /index.php
-
-# サイトマップ
 Sitemap: https://www.303furniture.net/sitemap.xml
