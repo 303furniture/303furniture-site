@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/0o-~cxg9u9gs4.css","style"]
+:HL["/_next/static/chunks/0_-khcq41-c~h.css","style"]
 :HL["/images/logo.png","image"]
-:HL["/images/clock.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"shop","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"h-CLq1qMn-vRPjCGmx6v9"}
+:HL["/images/clock.jpg","image",{"fetchPriority":"high"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"shop","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"tNIaZBGfA5yneOOEh70rv"}
