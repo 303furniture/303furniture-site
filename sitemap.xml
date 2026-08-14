@@ -1,20 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.303furniture.net/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.303furniture.net/images/hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/stone.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/wood.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/minomushi-tv-board.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.303furniture.net/products/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://www.303furniture.net/images/minomushi-cabinet.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/koushi-chair.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/coaster.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/clock.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/minomushi-tv-board.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/koushi-bench.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/teruteru-stool.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/naname-stool.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/single-leg-table.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/hole-leg-table.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/triangle-leg-table.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/toothbrush-base.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/umbrella.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/fish.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/trivet-round.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/toothbrush-large.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/toothbrush-round.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/toothbrush-slant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/vase.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/toilet-paper-stand.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/pen-tray.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/tape-cutter.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.303furniture.net/shop/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
