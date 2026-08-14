@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/0clk9iu4t_0w3.css","style"]
+:HL["/_next/static/chunks/0l1ccte47g1~t.css","style"]
 :HL["/images/logo.png","image"]
 :HL["/images/stone.jpg","image"]
 :HL["/images/wood.jpg","image"]
@@ -7,4 +7,4 @@
 :HL["/images/coaster.jpg","image"]
 :HL["/images/clock.jpg","image"]
 :HL["/images/minomushi-tv-board.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"udbzrTDYh8X9-PxW4W2w4"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"_sWgylAZWJwWoqjfChjzc"}
