@@ -1,4 +1,4 @@
 :HL["/_next/static/chunks/0_-khcq41-c~h.css","style"]
 :HL["/images/logo.png","image"]
 :HL["/images/hero.jpg","image",{"fetchPriority":"high"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"whu7PWKqRh_U7oqgJA9mK"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"XHJmUJg6RJe_0KT249Vl1"}
