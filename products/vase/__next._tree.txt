@@ -1,0 +1,4 @@
+:HL["/_next/static/chunks/0n8-i1u9i.pqj.css","style"]
+:HL["/images/logo.png","image"]
+:HL["/images/product-covers-20260905/vase.jpg","image",{"fetchPriority":"high"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"vase","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"f6YIBCfK-fSPo__YdC6dF"}

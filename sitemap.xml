@@ -40,6 +40,46 @@
     <image:image><image:loc>https://www.303furniture.net/images/product-covers-20260905/tape-cutter.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://www.303furniture.net/products/coaster/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.303furniture.net/images/product-covers-20260905/coaster.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/products/coaster/1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/products/coaster/2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/products/coaster/3.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.303furniture.net/products/vase/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.303furniture.net/images/product-covers-20260905/vase.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/products/vase/1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/products/vase/2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/products/vase/3.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.303furniture.net/products/pen-tray/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.303furniture.net/images/product-covers-20260905/pen-tray.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/products/pen-tray/1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/products/pen-tray/2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/products/pen-tray/3.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.303furniture.net/products/minomushi-tv-board/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.303furniture.net/images/product-covers-20260905/minomushi-tv-board.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/products/minomushi-tv-board/1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/products/minomushi-tv-board/2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.303furniture.net/images/products/minomushi-tv-board/3.jpg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://www.303furniture.net/shop/</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
